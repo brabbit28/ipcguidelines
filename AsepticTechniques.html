@@ -1,0 +1,3671 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>PACSLINK</title>
+	<link rel="icon" type="image/x-icon" href="hospital-html/img/favicon.ico">
+	<link rel="icon" href="hospital-html/img/PLC-Logo.png" type="image/png">
+	<link rel="stylesheet" href="hospital-html/css/bootstrap1.min.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/themefy_icon/themify-icons.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/swiper_slider/css/swiper.min.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/select2/css/select2.min.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/niceselect/css/nice-select.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/owl_carousel/css/owl.carousel.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/gijgo/gijgo.min.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/font_awesome/css/all.min.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/tagsinput/tagsinput.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/datatable/css/jquery.dataTables.min.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/datatable/css/responsive.dataTables.min.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/datatable/css/buttons.dataTables.min.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/text_editor/summernote-bs4.css" />
+	<link rel="stylesheet" href="hospital-html/vendors/morris/morris.css">
+	<link rel="stylesheet" href="hospital-html/vendors/material_icon/material-icons.css" />
+	<link rel="stylesheet" href="hospital-html/css/metisMenu.css">
+	<link rel="stylesheet" href="hospital-html/css/style1.css" />
+	<link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
+</head>
+
+<body class="crm_body_bg">
+	<!-- to the top button -->
+	<button onclick="topFunction()" id="toTopBtn" title="Go to top">Top</button>
+	<!-- ----------------- -->
+	<script>
+		// for to top button
+		// Get the button
+		let toTopButton = document.getElementById("toTopBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				toTopButton.style.display = "block";
+			} else {
+				toTopButton.style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+	<nav class="sidebar">
+		<div class="logo d-flex justify-content-between">
+			<a href="index.html" style="color: RED;"><img src="lgh.jpg" alt=""><B>INFECTION FREE LGH</B></a>
+			<div class="sidebar_close_icon d-lg-none">
+				<i class="ti-close"></i>
+			</div>
+		</div>
+
+
+		<ul id="sidebar_menu">
+
+
+			<li class="side_menu_title">
+
+			</li>
+			<li>
+				<a href="index.html" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/1.svg" alt="">
+					<span>Dashboard</span>
+				</a>
+
+			</li>
+
+
+			<li class="side_menu_title">
+				<span>Applications</span>
+			</li>
+
+			<li class="">
+				<a class="has-arrow " href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>Hand Hygiene</span>
+				</a>
+				<ul>
+					<li><a href="handHygiene.html"><i class="ti-shift-right"> </i><B>Hand Hygiene</B></a></li>
+					<li><a href="handHygiene.html#1"><i class="ti-shift-right-alt"> </i>Before Touching <BR>the Patients</a></li>
+					<li><a href="handHygiene.html#2"><i class="ti-shift-right-alt"> </i>Before Aseptic<BR> Procedure</a></li>
+					<li><a href="handHygiene.html#3"><i class="ti-shift-right-alt"> </i>After a Procedure or<bR> Body Fluid
+							<br>Exposure Risk</a></li>
+					<li><a href="handHygiene.html#4"><i class="ti-shift-right-alt"> </i>After Touching <bR>the Patients</a></li>
+					<li><a href="handHygiene.html#5"><i class="ti-shift-right-alt"> </i>After Touching <bR>Patient’s
+							Surroundings</a></li>
+				</ul>
+			</li>
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>PPE</span>
+				</a>
+				<ul>
+					<li><a href="ppe.html"><i class="ti-shift-right"> </i><B>PPE</B></a></li>
+					<li><a href="ppe.html#6"><i class="ti-shift-right-alt"> </i>Hand Washing <BR>Technique</a></li>
+					<li><a href="ppe.html#7"><i class="ti-shift-right-alt"> </i>Don Gown</a></li>
+					<li><a href="ppe.html#8"><i class="ti-shift-right-alt"> </i>Don Mask or<br>Respirator</a></li>
+					<li><a href="ppe.html#9"><i class="ti-shift-right-alt"> </i>Don Face Shield /<BR> Goggles </a></li>
+					<li><a href="ppe.html#10"><i class="ti-shift-right-alt"> </i>Don Gloves</a></li>
+					<!-- <li><a href="ppe.html#11"><i class="ti-shift-right-alt"> </i>Sterile Gloves</a></li>
+					<li><a href="ppe.html#12"><i class="ti-shift-right-alt"> </i>Non Sterile Gloves<br>Examination Gloves</a>
+					</li>
+					<li><a href="ppe.html#13"><i class="ti-shift-right-alt"> </i>Gloves not Indicated</a></li> -->
+					<li><a href="ppe.html#14"><i class="ti-shift-right-alt"> </i>Steps to DOFF PPE</a></li>
+				</ul>
+
+			</li>
+
+
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>Precaution <bR> Guidelines</span>
+				</a>
+
+				<ul>
+					<li><a href="PrecautionGuidelines.HTML"><i class="ti-shift-right"> </i><B>Precaution <bR> Guidelines</B></a>
+					</li>
+					<li><a href="PrecautionGuidelines.HTML#15"><i class="ti-shift-right-alt"> </i>Hand Hygiene</a></li>
+					<li><a href="PrecautionGuidelines.HTML#16"><i class="ti-shift-right-alt"> </i>Standard Precautions </a></li>
+					<li><a href="PrecautionGuidelines.HTML#17"><i class="ti-shift-right-alt"> </i>Transmission Based
+							<BR>Precautions</a></li>
+					<li><a href="PrecautionGuidelines.HTML#18"><i class="ti-shift-right-alt"> </i>Contact Precautions </a></li>
+					<li><a href="PrecautionGuidelines.HTML#19"><i class="ti-shift-right-alt"> </i>Droplet Precautions </a></li>
+					<li><a href="PrecautionGuidelines.HTML#20"><i class="ti-shift-right-alt"> </i>Airborne Precautions </a></li>
+					<li><a href="PrecautionGuidelines.HTML#21"><i class="ti-shift-right-alt"> </i>Blood Borne Diseases </a></li>
+				</ul>
+
+			</li>
+
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>Cleaning & Disinfection
+					</span>
+				</a>
+				<ul>
+					<li><a href="CleaningDisinfection.html"><i class="ti-shift-right"> </i><B>Cleaning & <BR>Disinfection</B></a>
+					</li>
+					<li><a href="CleaningDisinfection.html#22"><i class="ti-shift-right-alt"> </i>General Environmental <br>
+							Cleaning Techniques</a></li>
+					<li><a href="CleaningDisinfection.html#23"><i class="ti-shift-right-alt"> </i>Care & Storage<Br> of Supplies
+						</a></li>
+					<li><a href="CleaningDisinfection.html#24"><i class="ti-shift-right-alt"> </i>Personal Protective<br>
+							Equipment Required </a></li>
+					<li><a href="CleaningDisinfection.html#25"><i class="ti-shift-right-alt"> </i>General Surface <br>Cleaning
+							Process </a></li>
+					<li><a href="CleaningDisinfection.html#26"><i class="ti-shift-right-alt"> </i>General Mopping <bR>Process </a>
+					</li>
+					<li><a href="CleaningDisinfection.html#27"><i class="ti-shift-right-alt"> </i>Cleaning &
+							Disinfection<br>Process Summary </a></li>
+					<li><a href="CleaningDisinfection.html#28"><i class="ti-shift-right-alt"> </i>Check List </a></li>
+					<li><a href="CleaningDisinfection.html#29"><i class="ti-shift-right-alt"> </i>How to make<Br> Cleaning
+							Solution</a></li>
+				</ul>
+
+			</li>
+
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>Spill Response</span>
+				</a>
+				<ul>
+					<li><a href="SpillResponse.html"><i class="ti-shift-right"> </i><B>Spill Response</B></a></li>
+					<li><a href="SpillResponse.html#30"><i class="ti-shift-right-alt"> </i>Place Caution <br> Board/Sign</a></li>
+					<li><a href="SpillResponse.html#31"><i class="ti-shift-right-alt"> </i>Assess the Type &<Br> Quantity of
+							Spillage </a></li>
+					<li><a href="SpillResponse.html#32"><i class="ti-shift-right-alt"> </i>Collect the Correct<br> Equipment </a>
+					</li>
+					<li><a href="SpillResponse.html#33"><i class="ti-shift-right-alt"> </i>Protect Yourself </a></li>
+					<li><a href="SpillResponse.html#34"><i class="ti-shift-right-alt"> </i>Absorb the Spill </a></li>
+					<li><a href="SpillResponse.html#35"><i class="ti-shift-right-alt"> </i>Dispose of Spill<br> Material </a></li>
+					<li><a href="SpillResponse.html#36"><i class="ti-shift-right-alt"> </i>In Case of <br>Persistent Stain </a>
+					</li>
+					<li><a href="SpillResponse.html#37"><i class="ti-shift-right-alt"> </i>Doff the PPE &<Br> Wash the Hands</a>
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>Waste <br> Mangement </span>
+				</a>
+				<ul>
+					<li><a href="WasteManagment.html"><i class="ti-shift-right"> </i><B>Waste <br> Mangement</B></a></li>
+					<li><a href="WasteManagment.html#38"><i class="ti-shift-right-alt"> </i>General Waste</a></li>
+					<li><a href="WasteManagment.html#39"><i class="ti-shift-right-alt"> </i>Non Sharp<br> Medical Waste </a></li>
+					<li><a href="WasteManagment.html#40"><i class="ti-shift-right-alt"> </i>Sharp Waste </a></li>
+					<li><a href="WasteManagment.html#41"><i class="ti-shift-right-alt"> </i>Storage and <BR>Transportation of<bR>
+							Waste </a></li>
+					<li><a href="WasteManagment.html#42"><i class="ti-shift-right-alt"> </i>Personal Protective<br> Equipment
+							(PPE) </a></li>
+					<li><a href="WasteManagment.html#43"><i class="ti-shift-right-alt"> </i>Disinfection of<Br> Waste </a></li>
+				</ul>
+			</li>
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>Handling Linen</span>
+				</a>
+				<ul>
+					<li><a href="HandlingLinen.html"><i class="ti-shift-right"> </i><B>Handling Linen</B></a></li>
+					<li><a href="HandlingLinen.html#44"><i class="ti-shift-right-alt"> </i>Managing Clean<br> Linen</a></li>
+					<li><a href="HandlingLinen.html#45"><i class="ti-shift-right-alt"> </i>Handling / <BR>Dirty Linen </a></li>
+					<li><a href="HandlingLinen.html#46"><i class="ti-shift-right-alt"> </i>Handling Infectious<bR> Healthcare
+							Linen</a></li>
+				</ul>
+
+			</li>
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>Safe Inj. Pract</span>
+				</a>
+				<ul>
+					<li><a href="SafeInj.html"><i class="ti-shift-right"> </i><b>Safe Inj. Pract</b></a></li>
+					<li><a href="SafeInj.html#47"><i class="ti-shift-right-alt"> </i>One-Handed <Br>Scoop Method</a></li>
+				</ul>
+
+			</li>
+
+
+			<li class="mm-active">
+				<a class="has-arrow active" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span class="active">Aseptic <br>Techniques</span>
+				</a>
+				<ul>
+					<li><a href="AsepticTechniques.html"><i class="ti-shift-right"> </i><b>Aseptic <br>Techniques</b></a></li>
+					<li><a href="#48"><i class="ti-shift-right-alt"> </i>Drawing Bloof Sample<br>for
+							Routine<br>Laboratory Testing</a></li>
+					<li><a href="#49"><i class="ti-shift-right-alt"> </i>Drawing Sample <Br>for Blood
+							Culture</a></li>
+					<li><a href="#50"><i class="ti-shift-right-alt"> </i>Care Bundle for<bR> peripheral
+							IV<Br>Cannula</a></li>
+					<li><a href="#51"><i class="ti-shift-right-alt"> </i>Care Bundle for<bR> Urinary
+							Catheter </a></li>
+					<li><a href="#52"><i class="ti-shift-right-alt"> </i>Care Bundle for<bR>
+							Central-Lines</a></li>
+					<li><a href="#53"><i class="ti-shift-right-alt"> </i>Care Bundle for <br>Surgical
+							Procedure</a></li>
+				</ul>
+			</li>
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>PEP</span>
+				</a>
+				<ul>
+					<li><a href="pep.html"><i class="ti-shift-right"> </i><b>PEP</b></a></li>
+					<li><a href="pep.html#54"><i class="ti-shift-right-alt"> </i>Introduction</a></li>
+					<li><a href="pep.html#55"><i class="ti-shift-right-alt"> </i>First Aid</a></li>
+					<li><a href="pep.html#56"><i class="ti-shift-right-alt"> </i>Evaluate the Source<bR> Patient & HCW</a></li>
+					<li><a href="pep.html#57"><i class="ti-shift-right-alt"> </i>PEP of Hepatitis<bR> B Virus<bR> for Vaccinated
+							HCWs </a></li>
+					<li><a href="pep.html#58"><i class="ti-shift-right-alt"> </i>PEP of Hepatitis<bR> B virus for <bR>Incompletely
+							or<br> Unvaccinated<bR> HCWs </a></li>
+					<li><a href="pep.html#59"><i class="ti-shift-right-alt"> </i>PEP for HCWs for <br>Hepatitis C virus
+							<BR>Positive</a></li>
+					<li><a href="pep.html#60"><i class="ti-shift-right-alt"> </i>PEP for HCWs for <BR>HIV Positive </a></li>
+				</ul>
+			</li>
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>Specimen <BR> Collection</span>
+				</a>
+				<ul>
+					<li><a href="SpecimenCollection.html"><i class="ti-shift-right"> </i><b>Specimen <BR> Collection</b></a></li>
+					<li><a href="SpecimenCollection.html#61"><i class="ti-shift-right-alt"> </i> Basic Considerations
+						</a></li>
+
+					<li><a href="SpecimenCollection.html#63"><i class="ti-shift-right-alt"> </i>Abscess</a></li>
+					<li><a href="#SpecimenCollection.html#64"><i class="ti-shift-right-alt"> </i>Blood Culture</a></li>
+
+					<li><a href="SpecimenCollection.html#68"><i class="ti-shift-right-alt"> </i>Body Fluids</a></li>
+					<li><a href="SpecimenCollection.html#69"><i class="ti-shift-right-alt"> </i>Catheter (vascular)</a></li>
+					<li><a href="SpecimenCollection.html#70"><i class="ti-shift-right-alt"> </i>Cellulitis</a></li>
+					<li><a href="SpecimenCollection.html#71"><i class="ti-shift-right-alt"> </i>Cerebrospinal <br>Fluid</a></li>
+					<li><a href="SpecimenCollection.html#72"><i class="ti-shift-right-alt"> </i>Ear</a></li>
+					<li><a href="SpecimenCollection.html#73"><i class="ti-shift-right-alt"> </i>Nares <BR>Surveillance </a></li>
+					<li><a href="SpecimenCollection.html#74"><i class="ti-shift-right-alt"> </i>Sputum</a></li>
+					<li><a href="SpecimenCollection.html#75"><i class="ti-shift-right-alt"> </i>Stool/Feces</a></li>
+					<li><a href="SpecimenCollection.html#76"><i class="ti-shift-right-alt"> </i>Tissue</a></li>
+					<li><a href="SpecimenCollection.html#77"><i class="ti-shift-right-alt"> </i>Urine</a></li>
+					<li><a href="SpecimenCollection.html#78"><i class="ti-shift-right-alt"> </i>Wound</a></li>
+
+				</ul>
+			</li>
+
+
+			<li class="">
+				<a class="has-arrow" href="#" aria-expanded="false">
+					<img src="hospital-html/img/menu-icon/3.svg" alt="">
+					<span>ID & MDROs</span>
+				</a>
+				<ul>
+					<li><a href="ID&MDROs.html"><i class="ti-shift-right"> </i><b>ID & MDROs</b></a></li>
+					<li><a href="ID&MDROs.html#79"><i class="ti-shift-right-alt"> </i>Acquired Immune<Br>Deficiency
+							<br>Syndrome(AIDS)</a></li>
+					<li><a href="ID&MDROs.html#80"><i class="ti-shift-right-alt"> </i>Actinomycosis</a></li>
+					<li><a href="ID&MDROs.html#81"><i class="ti-shift-right-alt"> </i>Amoebiasis</a></li>
+					<li><a href="ID&MDROs.html#82"><i class="ti-shift-right-alt"> </i>Aspergillosis</a></li>
+					<li><a href="ID&MDROs.html#83"><i class="ti-shift-right-alt"> </i>Candidiasis</a></li>
+					<li><a href="ID&MDROs.html#84"><i class="ti-shift-right-alt"> </i>Chickenpox</a></li>
+					<li><a href="ID&MDROs.html#85"><i class="ti-shift-right-alt"> </i>Cholera </a></li>
+					<li><a href="ID&MDROs.html#86"><i class="ti-shift-right-alt"> </i>Clostridium Dfficile<br>Associated
+							Diarrhea</a></li>
+					<li><a href="ID&MDROs.html#87"><i class="ti-shift-right-alt"> </i>Conjunctivitis </a></li>
+					<li><a href="ID&MDROs.html#88"><i class="ti-shift-right-alt"> </i>COVID-19 </a></li>
+					<li><a href="ID&MDROs.html#89"><i class="ti-shift-right-alt"> </i>Cytomegalovirus<br>Infection(CMV) </a></li>
+					<li><a href="ID&MDROs.html#90"><i class="ti-shift-right-alt"> </i>Dengue Fever </a></li>
+					<li><a href="ID&MDROs.html#91"><i class="ti-shift-right-alt"> </i>Diphtheria </a></li>
+					<li><a href="ID&MDROs.html#92"><i class="ti-shift-right-alt"> </i>Gas Gangrene </a></li>
+					<li><a href="ID&MDROs.html#93"><i class="ti-shift-right-alt"> </i>Gastroenteritis</a></li>
+					<li><a href="ID&MDROs.html#94"><i class="ti-shift-right-alt"> </i>Gonorrhoea</a></li>
+					<li><a href="ID&MDROs.html#95"><i class="ti-shift-right-alt"> </i>Hepatitis</a></li>
+					<li><a href="ID&MDROs.html#96"><i class="ti-shift-right-alt"> </i>Herpes Simplex</a></li>
+					<li><a href="ID&MDROs.html#97"><i class="ti-shift-right-alt"> </i>Herpes <br>Zoster(Shingles)</a></li>
+					<li><a href="ID&MDROs.html#98"><i class="ti-shift-right-alt"> </i>Impetigo</a></li>
+					<li><a href="ID&MDROs.html#99"><i class="ti-shift-right-alt"> </i>Influenza</a></li>
+					<li><a href="ID&MDROs.html#100"><i class="ti-shift-right-alt"> </i>Malaria</a></li>
+					<li><a href="ID&MDROs.html#101"><i class="ti-shift-right-alt"> </i>Measles</a></li>
+					<li><a href="ID&MDROs.html#102"><i class="ti-shift-right-alt"> </i>Meningitis</a></li>
+					<li><a href="ID&MDROs.html#103"><i class="ti-shift-right-alt"> </i>Methicillin Resistant
+							<br>Staphylococcus<br>Aureus(MRSA)</a></li>
+					<li><a href="ID&MDROs.html#104"><i class="ti-shift-right-alt"> </i>Multi_Resistance <br>Gram
+							Negative<br>Organism</a></li>
+					<li><a href="ID&MDROs.html#105"><i class="ti-shift-right-alt"> </i>Mumps</a></li>
+					<li><a href="ID&MDROs.html#106"><i class="ti-shift-right-alt"> </i>Pneumonia</a></li>
+					<li><a href="ID&MDROs.html#107"><i class="ti-shift-right-alt"> </i>Rabies</a></li>
+					<li><a href="ID&MDROs.html#108"><i class="ti-shift-right-alt"> </i>Serve Acute
+							<br>Respiratory<br>Syndrome(SARS)</a></li>
+					<li><a href="ID&MDROs.html#109"><i class="ti-shift-right-alt"> </i>Scabies</a></li>
+					<li><a href="ID&MDROs.html#110"><i class="ti-shift-right-alt"> </i>Streptococcal<br>Infection</a></li>
+					<li><a href="ID&MDROs.html#111"><i class="ti-shift-right-alt"> </i>Syphilis</a></li>
+					<li><a href="ID&MDROs.html#112"><i class="ti-shift-right-alt"> </i>Tetanus</a></li>
+					<li><a href="ID&MDROs.html#113"><i class="ti-shift-right-alt"> </i>Typhoid & Paratyphoid<br>Disease</a></li>
+					<li><a href="ID&MDROs.html#114"><i class="ti-shift-right-alt"> </i>Vancomycin
+							Resistant<br>Enterococci(VRE)</a></li>
+					<li><a href="ID&MDROs.html#115"><i class="ti-shift-right-alt"> </i>Wound / Abscess</a></li>
+				</ul>
+			</li>
+
+
+
+
+
+		</ul>
+
+
+	</nav>
+
+	<!-- Topbar Start -->
+	<div class="container-fluid bg-gradient-light text-white d-none d-lg-block" style="background-color: #fff;">
+		<div class="row">
+			<div class="col-md-12">
+				<marquee direction="right"
+					style="padding: 5px 0 0 50px; color: rgb(12, 11, 11); font-style: italic; font-size: large; box-shadow: 0px 0px 8px 2px #999d9e; font-weight: bold;  color: red;">
+					Post Graduate Medical Institute &nbsp;/ Lahore General Hospital&nbsp;/ Ameer-ud-Din Medical College,
+					&nbsp;Lahore, &nbsp;Pakistan
+					<img ass="align-items-center" style="height: 77px; padding: 0 0 10px 20px;" src="pgmi.png" alt="">
+					<img class="align-items-center" style="height: 80px; padding: 0 10px 10px 20px;"
+						src="lgh-removebg-preview.png" alt="">
+					<img ass="align-items-center" style="height: 70px; padding: 0 0 10px 20px;" src="ameer u din.png" alt="">
+				</marquee>
+			</div>
+		</div>
+	</div>
+	<!-- Topbar End -->
+
+	<section class="main_content dashboard_part">
+		<div class="container-fluid g-0">
+			<div class="row">
+				<div class="col-lg-12 p-0">
+					<div class="header_iner d-flex justify-content-between align-items-center">
+						<div class="sidebar_icon d-lg-none">
+							<i class="ti-menu"></i>
+						</div>
+
+
+
+
+						<section class="  align-items-center cen">
+							<h3 class="cd-headline clip cen">
+								<span>INFECTION PREVENTION & CONTROL </span>
+								<span class="cd-words-wrapper">
+									<b class="is-visible">GUIDELINES</b>
+									<b>guidelines</b>
+
+								</span>
+							</h3>
+						</section>
+
+
+
+
+
+						<div class="header_right d-flex justify-content-between align-items-center">
+
+							<div class="profile_info">
+								<a> <img src="settings-778.png" style="width: 3rem; height: 3rem;"></i></a>
+								<div class="profile_info_iner">
+
+									<div class="profile_info_details">
+
+										<!-- aboutus menu start -->
+										<a id="aboutus" style="cursor: pointer; ">About
+											Us<i class="ti-shift-left"></i></a>
+
+										<div id="aboutus-menu">
+
+											<a id="myBtn3" style="cursor: pointer; ">Introduction</a>
+
+
+
+
+											<div id="myModal3" class="modal">
+
+
+												<div class="modal-content">
+													<span class="close">&times;</span>
+													<h2 style="text-align:center; color: brown;">Introduction </h2><Br>
+													<h4 style="text-align:left; ">
+														Infection prevention and control (IPC) is the mainstay of the healthcare system, especially
+														in
+														the contemporary era of infectious diseases, which concerns both patients and healthcare
+														workers. The routine training of healthcare staff regarding IPC practices has been quite
+														challenging in public sector hospitals of developing countries for quite a few reasons,
+														which
+														became even more difficult in the days of COVID-19 when it was not suitable to gather
+														healthcare workers for training purposes. At that time, it was realized that there must be
+														some way to ensure the access and all-time availability of basic IPC guidelines to all the
+														HCWs, which they may reach out to as per their point of care needs.
+														<br>
+														The IPC team of Lahore General Hospital developed the infection prevention and control
+														mobile
+														application (named IPC Guidelines) to carry out the concept, and made an effort to compile
+														all
+														the basic concepts of infection prevention and control guidelines, taken from various
+														authentic sources (CDC, NHSN, WHO, IPC manual by Dr. Nizam Damani and others), at one place.
+														<br>
+														This mobile application is easily downloadable, user-friendly, and an attempt to provide
+														access to fundamental IPC principles in a precise way.
+														<br>
+														The Lahore General Hospital forum tends to make it a service for the struggling healthcare
+														system of Pakistan and other developing countries.
+														<Br>
+														We intend to update this mobile App from time to time, with evolving infectious diseases and
+														IPC practices. We will welcome the comments and suggestions of the users which may help
+														improve it further.
+														<br><Br>
+													</h4>
+													<h4 style="text-align:right; ">Dr. Amina Asif<br>
+														MBBS, M.Phil (Microbiology), Ph.D. Scholar<Br>
+														Assistant Professor of Pathology <BR>
+														Focal person, IPC Committee<br>
+														PGMI/LGH/AMC
+
+													</h4>
+
+												</div>
+											</div>
+
+
+
+
+
+
+											<a id="myBtn" style="cursor: pointer; ">Message by<br> the
+												Principal </a>
+											<!-- Trigger/Open The Modal -->
+
+
+											<!-- The Modal -->
+											<div id="myModal" class="modal">
+
+												<!-- Modal content -->
+												<div class="modal-content">
+													<span class="close">&times;</span>
+													<div class="row">
+														<center>
+															<img class="handImg1 col-3" src="principal.jpg" alt="">
+														</center>
+														<BR>
+
+
+														<h2 class="col-12" style="text-align:center;  color: brown;"><BR><BR>Message by the
+															Principal <BR>
+															<p>Post Graduate Medical Institute / Lahore General
+																Hospital /
+																Ameer-ud-Din Medical College, Lahore, Pakistan </p>
+														</h2>
+													</div>
+
+
+													<h4 style="text-align:left; ">
+
+
+														<BR><BR>
+														The healthcare facilities, especially the public sector hospitals, in underdeveloped nations
+														are inadequately equipped, and the burden of healthcare-associated infections (HCAIs) makes
+														matters worse. The importance of infection prevention and control (IPC) practices cannot be
+														denied to lessen the burden of HCAIs.<Br>
+														Now when the world has been facing the worst pandemic of COVID-19, and other infectious
+														diseases one after the other, the knowledge and comprehension of the core IPC practices are
+														the ultimate need of the hour. The subject is very broad, making it challenging to fully
+														understand. Therefore, it is imperative to present certain key ideas in a way that is simple
+														to access and comprehend.<Br>
+														I commend the Lahore General Hospital team for coming up with the concept for this infection
+														prevention and control mobile application in the hopes that it will be a helpful resource
+														for
+														medical professionals, nurses, paramedics, housekeeping staff, and anyone else who is eager
+														to
+														learn and understand the fundamentals of IPC practices. <Br>
+														<Br><BR>
+													</h4>
+													<h4 style="text-align:right; font-weight: bold; ">Professor Dr. Sardar Muhammad Al Fareed
+														Zafar<BR>
+														MBBS, FSPS, FRCOG (UK), MCE (Monash University Australia)<BR>
+														Fellow in Reproductive Endocrinology (NUS Singapore)<br>
+														Professor & Head Department of Obstetrics and Gynecology<Br>
+													</h4>
+
+												</div>
+											</div>
+
+
+											<a id="myBtn1" style="cursor: pointer; align-content: center; ">Message by<br> the Medical
+												Superintendent</a>
+											<!-- Trigger/Open The Modal -->
+
+
+											<!-- The Modal -->
+											<div id="myModal1" class="modal">
+
+												<!-- Modal content -->
+												<div class="modal-content">
+													<span class="close">&times;</span>
+													<center>
+														<img class=" handImg1 col-3" src="/ms.jpg" alt="">
+													</center>
+													<Br>
+													<h2 class="col-12" style="text-align:center; color: brown;">Message by the Medical
+														Superintendent </h2>
+													<p style="text-align:center; ">Lahore General Hospital, Lahore, Pakistan.</p>
+													<h4 style="text-align:left; ">
+
+
+														<BR><BR>
+														It gives me great pleasure to write this message on the occasion of the launch of a mobile
+														application for infection prevention and control guidelines. This is a commendable
+														initiative
+														by the MSDS and infection control department of Lahore General Hospital, as it will benefit
+														not only health care personnel but the general population as well. All crucial components,
+														such as hand hygiene and personal protective measures, have been addressed clearly and
+														succinctly. Furthermore, the use of illustrations to express all crucial and necessary
+														information adds clarity to the material.
+														<bR>
+														<Br>
+													</h4>
+													<h4 style="text-align:right; font-weight: bold;">Dr. Khalid bin Aslam
+														<br>
+														MBBS, MPH, MHM
+													</h4>
+
+												</div>
+											</div>
+
+
+
+
+											<a id="myBtn4" style="cursor: pointer; align-content: center; ">Message by <br>the Dr.Nizam
+												Damani</a>
+											<!-- Trigger/Open The Modal -->
+
+
+											<!-- The Modal -->
+											<div id="myModal4" class="modal">
+
+												<!-- Modal content -->
+												<div class="modal-content">
+													<span class="close">&times;</span>
+													<center>
+														<img class=" handImg1 col-3" src="nizam.jpeg" alt="">
+													</center>
+													<Br>
+													<h2 class="col-12" style="text-align:center; color: brown;">Message by the Dr.Nizam Damani
+													</h2>
+													<p style="text-align:center; ">IPC Expert, Senior Consultant WHO</p>
+													<h4 style="text-align:left; ">
+
+
+														<BR><BR>
+														According to the recent World Health Organisation report, it has been estimated that out of
+														100 patients hospitalized, seven will be infected with healthcare-associated infections
+														(HAIs) and the risk of acquiring HAI is up to 20 times higher in low- and middle-income
+														countries. In addition, deaths are increased two to threefold when infections are resistant
+														to antimicrobials. This is an underestimate due to the lack of surveillance in most
+														healthcare facilities. HAls not only drain valuable health service resources in terms of
+														additional costs but also have an impact on the length of stay in the hospital as well as
+														additional nursing and medical time. In addition, especially in low- and middle-income
+														countries, the cost and impact of Hals to individuals and their families can be devastating
+														due to loss of income, indirect cost, and burden to family members in terms of time lost
+														from work in caring for the affected individual. The Covid -19 pandemic shows that both
+														patients and health workers can be at high risk of being infected with SARS-CoV-2 during
+														health care delivery and need to be protected. Therefore, the implementation of effective
+														Infection Prevention and Control (IPC) is now a major priority on a global basis.
+														Unfortunately, due to various reasons, implementation of even basic IPC practices can be
+														challenging, especially in low- and middle-income countries. I am delighted that Dr. Amina
+														Asif and the MSDS department have developed the IPC App for Lahore General Hospital,
+														Pakistan. This is a major achievement because the App is simple to use and is also available
+														in Urdu. It is available on mobile devices which allows not only easy accessibility to
+														implement good IPC practice at the point of care by health workers but also helps update IPC
+														guidelines and procedures regularly. To ease implementation, IPC procedures are illustrated
+														using images based on local guidelines. I am confident that the availability of the IPC App
+														supplemented by teaching and practical training in IPC will help the hospital to implement
+														good IPC practices at the point of care and will not only reduce HAIs but also help protect
+														health workers and visitors from other infections.
+														<bR>
+														<Br>
+													</h4>
+													<h4 style="text-align:right; font-weight: bold;">Prof. Nizam Damani
+														<br>
+														MBBS, MSc, FRCPath., FRCPI, CIC, DipHIC
+													</h4>
+
+												</div>
+											</div>
+
+
+
+
+
+											<a id="myBtn5" style="cursor: pointer; ">Contributions &nbsp; </a>
+
+
+
+
+											<div id="myModal5" class="modal">
+
+
+												<div class="modal-content">
+													<span class="close">&times;</span>
+													<h3 style="text-align:center;">Contributions </h3><Br>
+													<h4 style="text-align:center; "><br>
+														<b style="color:brown;">Dr. Amina Asif (Lead Facilitator)</b><br>
+														MBBS, M.Phil (Microbiology), CMT (UHS), Ph.D. Scholar<br>
+														Assistant Professor of Pathology<br>
+														Focal Person Infection Control Committee <Br>
+														PGMI/ LGH/AMC, Lahore<Br>
+														<br><Br>
+
+														<B style="color:brown;">Prof. Dr. Farooq Afzal</B><Br>
+														MBBS, MD (USA), FCPS, FRCS (UK), FACS, MHPE<Br>
+														Ex-Professor and Head Department of Surgery<Br>
+														PGMI/LGH/AMC, Lahore<Br>
+														<Br><Br>
+														<b style="color:brown;">Prof. Dr. Ghias-un-Nabi Tayyab</b><Br>
+														MBBS, MD (USA), FCPS Internal Medicine, MRCP (UK), FRCP(EDIN), AGAF(USA) <Br>
+														Head Department of Medicine<Br>
+														PGMI/LGH/AMC, Lahore<Br><Br><Br>
+
+														<b style="color:brown;">Prof. Dr. Jodat Saleem</b><Br>
+														MBBS, MCPS, FCPS Anesthesia <Br>
+														Head Department of Anesthesia, ICU and Pain Management<Br>
+														In charge, Infection Control Committee<Br>
+														PGMI/LGH/AMC, Lahore<Br><Br><Br>
+
+														<b style="color:brown;">Dr. Muhammad Irfan Malik</b><Br>
+														MBBS, FCPS Pulmonology, FRCP (Glasg), CMT (UHS)<Br>
+														Associate Professor of Pulmonology<Br>
+														In charge MSDS program <Br>
+														PGMI/LGH/AMC<Br><Br><Br>
+
+														<b style="color:brown;">Dr. Ahmad Naeem</b><Br>
+														MBBS, MS Surgery, CMT (UHS)<Br>
+														Assistant Professor of Surgery<Br>
+														PGMI/LGH/AMC, Lahore<Br><Br><Br>
+
+														<b style="color:brown;">Sister Nazneen</b><Br>
+														Head sister MSDS and IPC department, <Br>
+														LGH, Lahore<Br><Br><Br>
+
+														<b style="color:brown;">Muhammad Hussnain</b> <Br>
+														In charge CSSD dept.<Br>
+														LGH, Lahore<Br><Br>
+
+														<b style="color:brown;">IPC Staff Nurses</b><Br>
+														LGH, Lahore
+
+
+													</h4>
+
+												</div>
+											</div>
+
+
+
+
+										</div>
+
+										<!-- aboutus menu end -->
+
+
+
+
+
+
+
+										<a id="myBtn6" style="cursor: pointer; ">Disclaimer <i class="ti-shift-left"></i></a>
+
+
+
+
+										<div id="myModal6" class="modal">
+
+
+											<div class="modal-content">
+												<span class="close">&times;</span>
+												<h2 style="text-align:center; color: brown;">Disclaimer </h2><Br>
+												<h4 style="text-align:left; "><br>
+
+													Any medical and health related information and materials contained on this website are not
+													intended as professional medical advice and is being provided for general information purpose
+													only. This website only contains compilation of guidelines from reliable resources (source
+													provided with every guideline and after getting permission where required) and assumes no
+													responsibility for accuracy of any guidelines in first place. And it should also be taken into
+													consideration that many guidelines stand true for a specific topic, only some are compiled in
+													this website. We shall not be liable for any type of damage that may incur from any part of
+													this website.
+
+												</h4>
+
+											</div>
+										</div>
+
+
+
+
+
+
+
+										<a id="myBtn7" style="cursor: pointer; ">Contact Us <i class="ti-shift-left"></i></a>
+										<!-- Trigger/Open The Modal -->
+
+
+										<!-- The Modal -->
+										<div id="myModal7" class="modal">
+
+											<!-- Modal content -->
+											<div class="modal-content">
+												<span class="close">&times;</span>
+												<Center>
+													<img src="contactus.jpg" style="height: 30%; width: 70%;" alt="">
+
+												</Center>
+
+
+
+
+
+
+
+											</div>
+										</div>
+
+
+
+
+
+
+
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="col-lg-12 col-xl-12">
+			<div class="white_box mb_30 ">
+
+				<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+					
+					padding: 20px;
+					">
+
+					<br>
+					<CENTER>
+						<h1 style="color:#fff;" class="mb_25">Aseptic Techniques</h1>
+					</CENTER>
+
+				</div>
+				<Br><br>
+
+
+
+
+
+
+
+
+				<div class="container-fluid p-0">
+					<div class="row justify-content-center">
+						<div class="col-lg-12">
+							<div class="white_box mb_30">
+								<div class="box_header ">
+									<div class="main-title">
+										<h3 class="mb-0">
+
+
+										</h3>
+									</div>
+								</div>
+
+
+
+
+								<div class="accordion accordion_custom mb_50" id="accordion_ex">
+									<div class="card">
+										<div class="card-header">
+											<h2 class="mb-0">
+												<a href="#" id="48" class="btn" type="button" data-bs-toggle="collapse"
+													data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+													style="font-size: 25px;">
+													Drawing Sample for Routine Laboratory Testing
+												</a>
+											</h2>
+										</div>
+										<div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion_ex">
+											<div class="card-body">
+
+												<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+					
+					padding: 20px;
+					">
+
+													<br>
+													<CENTER>
+														<h1 style="color:#fff;" class="mb_25">Drawing Sample for Routine Laboratory Testing</h1>
+													</CENTER>
+
+												</div>
+												<Br><br>
+
+
+
+
+
+
+
+
+
+
+												<Br>
+												<H3>
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><Br><br>
+														&nbsp; 1. Assemble equipment and include needle and syringe or vacuum tube, depending on
+														which is to be used.<a type="button" class="btn " id="sp-butt3"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a><bR><BR>
+														<div id="sp-img3">
+															<div class="col-12" style="display: flex;
+			justify-content: center;   width: 100%;
+			height: 30rem;object-fit: cover;">
+																<img src="Drawing.jpg" class="handImg" alt="">
+
+
+															</div>
+														</div>
+													</div>
+													<BR><BR>
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+														&nbsp; 2. Perform hand hygiene (if using soap and water, dry hands with single use towel.
+
+														<br>
+														<br>
+
+														&nbsp;3. Identify and prepare the patient. <Br><br>
+
+														&nbsp;4. Select the site, preferably at the antecubital area (i.e. the bend of the elbow).
+														Warming the arm with a hot pack, or hanging the hand down may make it easier to<br><br> see
+														the veins. Palpate the area to locate the anatomic landmarks.
+
+														<Br><br>&nbsp;5. Apply a tourniquet, about 4–5 finger widths above the selected venipuncture
+														site.
+
+														<Br><br>&nbsp;6. Ask the patient to form a fist so that the veins are more prominent.
+
+														<Br><br>&nbsp;7. Put on well-fitting, non-sterile gloves.<Br><br>
+														<center><a type="button" class="btn " id="sp-butt4"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a><bR><BR>
+															<div id="sp-img4"><BR>
+
+
+																<div class="col-12" style="display: flex;
+	justify-content: center;   width: 100%;
+	height: 40rem;object-fit: cover;">
+																	<img src="Drawing1.jpg" class="handImg" alt="">
+																</div>
+															</div>
+														</center>
+													</div>
+													<bR><BR>
+
+
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+														<BR><BR>
+
+														&nbsp; 8. Disinfect the site using 70% isopropyl alcohol for 30 seconds with friction in a
+														back and forth direction.<Br><BR>
+
+														&nbsp; 9. Allow to dry completely (30 seconds).DO NOT touch the site once alcohol or other
+														antiseptic has been applied. If further vein palpation is necessary after skin<BR><BR>
+														preparation, a sterile glove should be worn.
+
+														<BR><br> &nbsp;10. Anchor the vein by holding the patient’s arm and placing a thumb BELOW
+														the venipuncture site.
+
+														<BR><br>&nbsp;11. Enter the vein swiftly at a 30 degree angle.
+
+														<BR><Br>&nbsp;12. Once sufficient blood has been collected, release the tourniquet BEFORE
+														withdrawing the needle.
+
+														<BR><Br>&nbsp;13. Withdraw the needle gently and then give the patient a clean gauze or dry
+														cotton-wool ball to apply to the site with gentle pressure.<BR><BR>
+
+														<center>
+															<a type="button" class="btn " id="sp-butt5"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a><bR><BR>
+															<div id="sp-img5">
+																<div class="col-12" style="display: flex;
+			justify-content: center;   width: 100%;
+			height: 30rem;object-fit: cover;">
+																	<img src="Drawing2.jpg" class="handImg" alt="">
+																</div>
+																<br>
+
+															</div>
+														</center>
+
+
+													</div>
+													<BR><bR>
+
+
+													<br>
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+														<BR><BR>
+														14. Discard the used needle and syringe or blood-sampling device into a puncture-resistant
+														container.<BR><BR>
+
+														15. Check the label and forms for accuracy.<Br><BR>
+
+														16. Discard sharps and broken glass into the sharps container. Place items that can drip
+														blood or body fluids into the infectious waste.
+
+														<Br> <Br>17. Remove gloves, discard properly and perform hand hygiene. If using soap and
+														water, dry hands with single-use towels.
+														<BR><BR>
+
+														<center>
+															<a type="button" class="btn " id="sp-butt6"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a><bR><BR>
+															<div id="sp-img6">
+																<div class="col-12" style="display: flex;
+				justify-content: center;   width: 100%;
+				height: 100%;object-fit: cover;">
+																	<img src="Drawing3.jpg" class="handImg" alt="">
+																</div>
+																<Br>
+
+															</div>
+														</center>
+													</div>
+												</H3>
+
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="card">
+										<div class="card-header">
+											<h2 class="mb-0">
+												<a href="#" id="49" class="btn " type="button" data-bs-toggle="collapse"
+													data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
+													style="font-size: 25px;">
+													Drawing Sample for Blood Culture
+												</a>
+											</h2>
+										</div>
+										<div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordion_ex">
+											<div class="card-body">
+
+
+												<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+					
+					padding: 20px;
+					">
+
+													<br>
+													<CENTER>
+														<h1 style="color:#fff;" class="mb_25">Drawing Sample for Blood Culture</h1>
+													</CENTER>
+
+												</div>
+												<Br><br>
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+		
+		padding: 5px;
+		">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25">Blood culture</h3>
+
+
+													</div>
+												</CENTER>
+												<BR>
+
+												<h3>
+
+													1. Blood cultures should be performed for patients with a reasonable likelihood of
+													bacteremia.<Br><Br>
+
+													2. Make every effort to obtain blood culture sample before initiation of antimicrobial
+													therapy.<Br><BR>
+													3. Preferred venipuncture sites include the antecubital veins or other upper extremity blood
+													vessels; these sites are less likely to be associated with blood culture<BR><BR> contamination
+													than femoral vessels.<Br><br>
+													4. Blood cultures should not be obtained via intravascular catheters unless the catheter is
+													thought to be the source of bacteremia.<Br><BR>
+													5. Draw blood sample aspectically. Use of an alcohal cantaining disinfetctant is
+													recommended.Using strile gloves is advisable.<br><Br>
+													<Br>
+													<div class="col-lg-12" style="background-color: rgb(203, 203, 245);">
+														<h2>Rest follow Drawing Blood Sample for Routine Laboratory Testing procedure. <a
+																type="button" class="btn " id="sp-butt7"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a></h2>
+														<bR><BR>
+
+
+													</div>
+													<BR><BR>
+													<div id="sp-img7">
+
+
+
+
+
+														<div class="card-body">
+
+															<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+					
+					padding: 20px;
+					">
+
+																<br>
+																<CENTER>
+																	<h1 style="color:#fff;" class="mb_25">Drawing Sample for Routine Laboratory Testing
+																	</h1>
+																</CENTER>
+
+															</div>
+															<Br><br>
+
+
+
+
+
+
+
+
+
+
+															<Br>
+															<H3>
+																<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><Br><br>
+																	&nbsp; 1. Assemble equipment and include needle and syringe or vacuum tube, depending
+																	on which is to be used.<a type="button" class="btn " id="sp-butt8"> <img
+																			src="arrow.png " style="height: 50%; width: 50%;"> </a><bR><BR>
+																	<div id="sp-img8">
+																		<div class="col-12" style="display: flex;
+			justify-content: center;   width: 100%;
+			height: 30rem;object-fit: cover;">
+																			<img src="Drawing.jpg" class="handImg" alt="">
+
+
+																		</div>
+																	</div>
+																</div>
+																<BR><BR>
+																<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+																	&nbsp; 2. Perform hand hygiene (if using soap and water, dry hands with single use
+																	towel.
+
+																	<br>
+																	<br>
+
+																	&nbsp;3. Identify and prepare the patient. <Br><br>
+
+																	&nbsp;4. Select the site, preferably at the antecubital area (i.e. the bend of the
+																	elbow). Warming the arm with a hot pack, or hanging the hand down may make it easier
+																	to<br><br> see the veins. Palpate the area to locate the anatomic landmarks.
+
+																	<Br><br>&nbsp;5. Apply a tourniquet, about 4–5 finger widths above the selected
+																	venipuncture site.
+
+																	<Br><br>&nbsp;6. Ask the patient to form a fist so that the veins are more prominent.
+
+																	<Br><br>&nbsp;7. Put on well-fitting, non-sterile gloves.<Br><br>
+																	<center><a type="button" class="btn " id="sp-butt9"> <img src="arrow.png "
+																				style="height: 50%; width: 50%;"> </a><bR><BR>
+																		<div id="sp-img9"><BR>
+
+
+																			<div class="col-12" style="display: flex;
+	justify-content: center;   width: 100%;
+	height: 40rem;object-fit: cover;">
+																				<img src="Drawing1.jpg" class="handImg" alt="">
+																			</div>
+																		</div>
+																	</center>
+																</div>
+																<bR><BR>
+
+
+																<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+																	<BR><BR>
+
+																	&nbsp; 8. Disinfect the site using 70% isopropyl alcohol for 30 seconds with friction
+																	in a back and forth direction.<Br><BR>
+
+																	&nbsp; 9. Allow to dry completely (30 seconds).DO NOT touch the site once alcohol or
+																	other antiseptic has been applied. If further vein palpation is necessary after
+																	skin<BR><BR> preparation, a sterile glove should be worn.
+
+																	<BR><br> &nbsp;10. Anchor the vein by holding the patient’s arm and placing a thumb
+																	BELOW the venipuncture site.
+
+																	<BR><br>&nbsp;11. Enter the vein swiftly at a 30 degree angle.
+
+																	<BR><Br>&nbsp;12. Once sufficient blood has been collected, release the tourniquet
+																	BEFORE withdrawing the needle.
+
+																	<BR><Br>&nbsp;13. Withdraw the needle gently and then give the patient a clean gauze
+																	or dry cotton-wool ball to apply to the site with gentle pressure.<BR><BR>
+
+																	<center>
+																		<a type="button" class="btn " id="sp-butt10"> <img src="arrow.png "
+																				style="height: 50%; width: 50%;"> </a><bR><BR>
+																		<div id="sp-img10">
+																			<div class="col-12" style="display: flex;
+			justify-content: center;   width: 100%;
+			height: 30rem;object-fit: cover;">
+																				<img src="Drawing2.jpg" class="handImg" alt="">
+																			</div>
+																			<br>
+
+																		</div>
+																	</center>
+
+
+																</div>
+																<BR><bR>
+
+														</div>
+
+
+
+
+
+														<Br>
+													</div>
+													<Br>
+													6. Blood should be inoculated directly into blood culture bottles(needle needs not to be
+													changed before inserting blood into culture bottle).
+													<Br><BR>7. Tops of blood culture vails should be disinfected prior to inoculation of blood
+													with 70% alcohol swab.
+													<BR><BR>8. Collect required amount of blood.
+
+
+												</h3>
+
+
+
+
+											</div>
+										</div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+									<div class="card">
+										<div class="card-header">
+											<h2 class="mb-0">
+												<a href="#" id="50" class="btn " type="button" data-bs-toggle="collapse"
+													data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"
+													style="font-size: 25px;">
+
+													Care Bundle for Peripheral IV Cannula
+
+												</a>
+											</h2>
+										</div>
+										<div id="collapseThree" class="collapse " aria-labelledby="headingThree"
+											data-parent="#accordion_ex">
+											<div class="card-body">
+
+												<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+												
+												padding: 20px;
+												">
+
+													<br>
+													<CENTER>
+														<h1 style="color:#fff;" class="mb_25">Care Bundle for Peripheral IV Cannula</h1>
+													</CENTER>
+
+												</div>
+												<Br><br>
+
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+									
+									padding: 5px;
+									">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25"> IV Catheter / Cannula Insertion</h3>
+
+
+													</div>
+												</CENTER>
+												<BR>
+												<h3>
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+														<h3> Assemble equipment (tourniquet, gloves, alcohol swabs, Cannula, 3 way extension,
+															syringes, sharp box). <a type="button" class="btn " id="sp-butt11"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a><bR><BR>
+															<div id="sp-img11">
+																<div class="col-12" style="display: flex;
+                                                        justify-content: center;   width: 100%;
+                                                         height: 100%;
+                                                        object-fit: cover;
+  
+                                                             ">
+																	<img src="care.jpg" class="handImg" alt="">
+																	<br>
+
+																</div>
+															</div>
+
+														</h3>
+													</div>
+													<Br>
+													<br>
+
+
+
+													<bR><br>
+
+													<br><BR>
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+														<BR>
+														<h3> 1. Perform hand hygiene (if using soap and water, dry hands with single use towel).
+															<BR><BR>
+
+
+															2. Identify and prepare the patient.<Br><BR>
+
+															3. Select the site.<br><BR>
+
+															4. Apply a tourniquet, about 4–5 finger widths above the selected venepuncture
+															site.<Br><BR>
+
+															5. Ask the patient to form a fist so that the veins are more prominent.<BR><BR>
+
+															6. Perfrom hand hygiene. Put on well-fitting, non-sterile gloves.<Br><BR>
+															<center>
+																<a type="button" class="btn " id="sp-butt12"> <img src="arrow.png "
+																		style="height: 50%; width: 50%;"> </a><bR><BR>
+																<div id="sp-img12">
+																	<div class="col-12" style="display: flex;
+																justify-content: center;   width: 100%;
+																 height: 38rem;
+																object-fit: cover;
+			  
+																	 ">
+																		<img src="iv.jpeg" class="handImg" alt="">
+
+																	</div>
+															</center>
+													</div>
+												</h3>
+
+
+
+
+
+												<br><BR>
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+													<h3>
+														<BR>
+														7. Disinfect the site using 70% isopropyl alcohol for 30 seconds with friction in a back and
+														forth direction.<BR><BR>
+
+														8. Allow to dry completely (30 seconds). DONOT touch the puncture site after applying
+														antiseptic.<Br><BR>
+
+														9. Anchor the vein by holding the patient’s arm/hand and placing a thumb BELOW the
+														venepuncture site.<Br><BR>
+
+														10. Enter the IV catheter swiftly at a 30 degree angle.<Br><BR>
+
+														11. Once sufficient blood has been seen coming in the catheter, release the
+														tourniquet.<Br><BR>
+
+														12. Withdraw the needle gently and then secure the catheter with a transparent/ gauze
+														dressing
+													</h3>
+													<BR>
+													<center>
+														<a type="button" class="btn " id="sp-butt13"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a><bR><BR>
+														<div id="sp-img13">
+															<div class="col-12" style="display: flex;
+    justify-content: center;   width: 100%;
+     height: 40rem;
+    object-fit: cover;
+
+         ">
+																<img src="care2.jpg" class="handImg" alt="">
+
+
+															</div>
+													</center>
+												</div>
+
+												<BR>
+
+												<!-- <BR><Br> -->
+
+												<br><BR>
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+													<BR>
+													<h3>
+
+														13. Discard the used needle into a puncture-resistant container.<Br><BR>
+
+														14. Remove gloves, discard properly and perform hand hygiene. If using soap and water, dry
+														hands with single-use towels.<BR><BR>
+
+														15. Enter the record with date.<BR><BR>
+													</h3>
+
+
+													<BR>
+													<center>
+														<a type="button" class="btn " id="sp-butt14"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a><bR><BR>
+														<div id="sp-img14">
+															<div class="col-12" style="display: flex;
+    justify-content: center;   width: 100%;
+     height: 45rem;
+    object-fit: cover;
+
+         ">
+																<img src="care3.jpg" class="handImg" alt="">
+
+															</div>
+													</center>
+
+												</div>
+
+
+												<Br><br>
+
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+				
+				padding: 5px;
+				">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25"> IV Catheter/Cannula Care</h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+												<h3>
+													1. In adults, use an upper-extremity site for catheter insertion. Replace a catheter inserted
+													in a lower extremity site to an upper extremity site as soon as possible.
+													<Br><BR>
+													2. In pediatric patients, the upper or lower extremities or the scalp (in neonates or young
+													infants) can be used as the catheter insertion site.
+													<bR><BR>
+													3. Replace peripheral catheters after 72-96 hours.
+													<br><BR>
+													4. Use a midline catheter or peripherally inserted central catheter (PICC), instead of a short
+													peripheral catheter, when the duration of IV therapy will likely exceed six<BR><BR> days.
+													<bR><BR>5. Any dressing that becomes soiled, wet, damaged, is no longer adherent, has visible
+													ooze under it or starts to lift should be changed immediately.
+													<br><BR>6. Evaluate the catheter insertion site daily by palpation through the dressing to
+													discern tenderness and by inspection if a transparent dressing is in use. Gauze and<BR><BR>
+													opaque dressings should not be removed if the patient has no clinical signs of
+													infection.<BR><BR> If the patient has local tenderness or other signs of possible infection ,
+													opaque dressing should be removed to visualize clearly.
+													<bR><BR>7. Topical antibiotic ointments or creams should not be routinely used on insertion
+													sites.
+													<br><br>
+
+
+												</h3>
+
+
+
+
+
+
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="card">
+										<div class="card-header">
+											<h2 class="mb-0">
+												<a href="#" id="51" class="btn " type="button" data-bs-toggle="collapse"
+													data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree"
+													style="font-size: 25px;">
+													Care Bundle for Urinary Catheter
+												</a>
+											</h2>
+										</div>
+										<div id="collapseThree3" class="collapse " aria-labelledby="headingThree3"
+											data-parent="#accordion_ex">
+											<div class="card-body">
+
+												<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+												
+												padding: 20px;
+												">
+
+													<br>
+													<CENTER>
+														<h1 style="color:#fff;" class="mb_25">Care Bundle for Urinary Catheter</h1>
+													</CENTER>
+
+												</div>
+												<Br><br>
+
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+														
+														padding: 5px;
+														">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25"> Urinary Catheter Insertion</h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+													<BR>
+													<h3>
+														1.Confirm patient meets the appropriate indications for Indwelling Urethral Catheter.
+														<br><BR>
+														2.Gather the equipment.
+
+
+
+													</h3>
+
+
+													<center>
+														<a type="button" class="btn " id="sp-butt15"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a><bR><BR>
+														<div id="sp-img15">
+															<div class="col-12" style="display: flex;
+    justify-content: center;   width: 100%;
+     height: 30rem;
+    object-fit: cover;
+
+         ">
+																<img src="URINARY.jpg" class="handImg" alt="">
+
+															</div>
+													</center>
+												</div>
+
+												<br><br>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);">
+													<BR>
+													<h3>
+														3. Perform hand hygiene.<bR><BR>
+
+														4. Position the patient properly.<bR><BR>
+
+														4a. Female<bR><BR>
+
+														Supine position with knees flexed and separated; feet flat on the bed.<bR><BR>
+
+														4b. Male<bR><BR>
+
+														Supine position with legs extended.<bR><br>
+
+														5. Open the package and create an area for the sterile field.<bR><BR>
+
+														6. Drape the patient with sterile sheets supplied in the kit.<bR><BR>
+
+														7. Perform hand hygiene and wear sterile gloves.<bR><BR>
+
+														8. Cleanse the perineal area with pyodine solution.<bR><BR>
+
+														9. Tear the outer packing of the catheter. Carefully handling the catheter (the hand should
+														touch the inner plastic covering and not the surface of the catheter directly), lubricate
+														the catheter tip. Use sterile, single-use packet of lubricant jelly for catheter insertion.
+														<bR><BR>
+														10. Insert the catheter into the urinary meatus until the urine flows in the catheter (make
+														sure catheter is connected with collection bag).
+														<bR><BR>
+														11. Inflate the balloon of indwelling catheter with pre filled saline in the syringe.
+														<bR><BR>
+														12. Secure the Foley catheter.
+														<bR><BR>
+														13. Perform Hand Hygiene.
+														<bR><BR>
+														14. Position hanger on bed rail at the foot of the bed and confirm tube is not kinked.
+														<bR><BR>
+														15. Indicate time and date of catheter insertion.
+														<bR><BR>
+														16. Dispose of all waste properly.
+														<bR><BR>
+													</h3>
+													<BR>
+													<center>
+														<a type="button" class="btn " id="sp-butt16"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a><bR><BR>
+
+														<div id="sp-img16">
+															<div class="col-12" style="display: flex;
+					justify-content: center;   width: 100%;
+					 height: 40rem;
+					object-fit: cover;
+				
+						 ">
+																<img src="URINARY1.jpg" class="handImg" alt="">
+
+															</div>
+														</div>
+
+													</center>
+
+
+
+												</div>
+												<BR><BR>
+
+												<Br><br>
+
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+				
+				padding: 5px;
+				">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25"> Urinary Catheter Care</h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+												<h3>
+													1. Following aseptic insertion of the urinary catheter, maintain a closed drainage
+													system.<bR><BR>
+													2. Maintain unobstructed urine flow.<bR><BR>
+													3. Insert catheters only for appropriate indications, and leave in place only as long as
+													needed.<bR><BR>
+													4. Minimize urinary catheter use and duration of use in all patients, particularly those at
+													higher risk for CAUTI such as women, the elderly, and patients with impaired<BR><BR>
+													immunity.<bR><BR>
+													5. If breaks in aseptic technique, disconnection, or leakage occur, replace the catheter and
+													collecting system using aseptic technique and sterile equipment.<bR><BR>
+													6. Do not clean the periurethral area with antiseptics to prevent CAUTI while the catheter is
+													in place. Routine hygiene (e.g., cleansing of the meatal surface during<BR><BR> daily bathing)
+													is appropriate.<bR><BR>
+													7. Changing indwelling catheters or drainage bags at routine, fixed intervals is not
+													recommended. Rather, catheters and drainage bags should be changed based on <BR><BR>clinical
+													indications such as infection, obstruction, or when the closed system is compromised.<bR><br>
+													8. Use urinary catheters in operative patients only as necessary, rather than routinely. For
+													operative patients who have an indication for an indwelling catheter,<BR><BR> remove the
+													catheter as soon as possible postoperatively, preferably within 24 hours, unless there are
+													appropriate indications for continued use.<bR><BR>
+													9. Consider using external catheters as an alternative to indwelling urethral catheters in
+													cooperative male patients without urinary retention or bladder outlet<BR><BR>
+													obstruction.<bR><br>
+													10. screening of catheterized patients for asymptomatic bacteriuria is not
+													recommended.<bR><bR>
+
+
+
+												</h3>
+
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="card">
+										<div class="card-header">
+											<h2 class="mb-0">
+												<a href="#" id="52" class="btn " type="button" data-bs-toggle="collapse"
+													data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree"
+													style="font-size: 25px;">
+													Care Bundle for Central Lines
+												</a>
+											</h2>
+										</div>
+										<div id="collapseThree4" class="collapse " aria-labelledby="headingThree3"
+											data-parent="#accordion_ex">
+											<div class="card-body">
+
+
+												<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+												
+												padding: 20px;
+												">
+
+													<br>
+													<CENTER>
+														<h1 style="color:#fff;" class="mb_25">Care Bundle for Central Lines</h1>
+													</CENTER>
+
+												</div>
+												<Br><br>
+
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(118, 110, 192); border-radius: 30px;
+														
+														padding: 5px;
+														">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25"> Insertion of Central Lines <a type="button"
+																class="btn " id="sp-butt17"> <img src="arrow.png " style="height: 50%; width: 50%;">
+															</a></h3>
+
+
+
+
+
+
+
+													</div>
+
+
+
+											</div>
+											</CENTER>
+											<BR><BR>
+
+
+											<div id="sp-img17">
+
+
+
+												<br><BR>
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+							
+							padding: 5px;
+							">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25">Preparation </h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+												<h3>
+													1. Identify patient and obtain consent for central venous catheter (CVC).<Br><BR>
+													2. Use a CVC with the minimum number of ports or lumens essential for the management of the
+													patient.<BR><BR>
+													3. When adherence to aseptic technique cannot be ensured (i.e., catheters inserted during a
+													medical emergency), replace the catheter as soon as possible, i.e., within 48<BR><BR> hours.
+													<BR><BR>
+
+
+													<br><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+				
+				padding: 5px;
+				">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25"> Select the best insertion site to minimize
+																infections and based on patient condition </h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+
+
+													1. Avoid femoral vein for CVC access in adult patients.<Br><BR>
+													2. Use subclavian vein instead of jugular.<BR><BR>
+													3. Avoid subclavian vein in hemodialysis patients and those with advanced kidney disease which
+													may cause subclavian vein stenosis.
+													<BR><BR>
+
+													<br><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+			
+			padding: 5px;
+			">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">Gather all needed equipment</h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+
+
+
+													1. Sterilized CVC insertion pack set<Br><BR>
+													2. PPE: Sterile gowns, cap and mask<br><BR>
+													3. Central Venous Catheter of an appropriate size.<Br><BR>
+													4. Suture, syringes of 5cc and 10cc.<Br><BR>
+													5. Injection Heparin, Xylocaine.<br><BR>
+													6. Sterile Gloves.<Br><BR>
+													7. Pyodine solution, normal Saline.<br><BR>
+													<BR>
+													<div class="col-12" style="display: flex;
+justify-content: center;   width: 100%;
+height: 30rem;object-fit: cover;">
+														<img src="insertion.jpg" class="handImg"
+															alt="Example of high touch surfaces in a specialised patient area.">
+														&nbsp;
+														<img src="insertion1.jpg" class="handImg"
+															alt="Example of high touch surfaces in a specialised patient area.">
+													</div>
+
+
+													<br><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+			
+			padding: 5px;
+			">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">Central Line Insertion Procedure</h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+
+													<br>
+													1. Remove wrist watch/Jewelry and rings.<BR><BR>
+													2. Confirm hand washing/ sanitization with seven steps of hand Hygiene.<Br><BR>
+													3. Operator: wear cap, mask, eye protection, sterile gown, sterile gloves.<BR><BR>
+													4. Supervisor: wear cap, mask, eye protection, sterile gown, sterile gloves.<BR><BR>
+													5. Assistance: wear cap, mask, eye protection, sterile gown, sterile gloves.<BR><BR>
+													6. Patient’s proper position (Trendelenburg, supine).<BR><BR>
+													7. Prepare clean skin with a >0.5% chlorhexidine preparation with alcohol bef. If there is a
+													contraindication to chlorhexidine or unavailability, tincture of iodine, an iodophor,<BR><BR>
+													or 70% alcohol can be used as alternatives.<BR><BR>
+													8. Allow site after antiseptic application to dry as per manufacturer’s
+													recommendation.<Br><BR>
+													9. Use sterile technique to drape from head to toe.<BR><BR>
+													10. Consider local anesthetic and / or sedation.<BR><BR>
+													11. Ultrasonic guidance has to be observed aseptically.<BR><BR>
+													12. Use new sterile gloves before handling the new catheter when guidewire exchanges are
+													performed.<BR><Br>
+
+													<div class="col-12" style="display: flex;
+justify-content: center;   width: 100%;
+height: 20rem;object-fit: cover;">
+														<img src="insertion2.jpg" class="handImg"
+															alt="Example of high touch surfaces in a specialised patient area.">
+														&nbsp;
+														<img src="insertion3.jpg" class="handImg"
+															alt="Example of high touch surfaces in a specialised patient area.">
+
+													</div>
+													<BR>
+													<br><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+			
+			padding: 5px;
+			">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">During Procedure</h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+
+
+													<BR>
+													1. Maintain sterile field.<BR><BR>
+													2. Clamps port not to be used during insertion.<BR><BR>
+													3. Ensure grasp on guide wire is maintained throughout procedure and removed post
+													procedure.<BR><BR>
+													4. Obtains qualified 2nd operator, after 3 unsuccessful pricks.<BR><BR>
+													5. Aspirate blood from each lumen.<BR><BR>
+													6. Transduce CVC/ ensure CVC by fluid volume.<BR><BR>
+													<div class="col-12" style="display: flex;
+justify-content: center;   width: 100%;
+height: 20rem;object-fit: cover;">
+														<img src="insertion4.jpg" class="handImg"
+															alt="Example of high touch surfaces in a specialised patient area.">
+														<img src="insertion5.jpg" class="handImg"
+															alt="Example of high touch surfaces in a specialised patient area.">
+
+
+													</div>
+													<BR><BR>
+
+													<BR>
+
+													<br><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+				
+				padding: 5px;
+				">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">After Procedure</h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+
+													<BR>
+													1. Clean blood from site.<BR><BR>
+													2. Cover site with sterile guaze/ sterile transparent, semi-permeable dressing and label
+													it.<BR><BR>
+													3. Verify placement by X-Ray.<BR><BR>
+													4. Document procedure and fill the provided checklist of procedure.<br>
+													<BR>
+
+													<div class="col-12" style="display: flex;
+    justify-content: center;   width: 100%;
+    height: 100%;object-fit: cover;">
+														<img src="insertion6.jpg" class="handImg"
+															alt="Example of high touch surfaces in a specialised patient area.">
+
+
+													</div><Br><BR>
+
+												</h3>
+
+
+											</div>
+
+
+
+
+											<Br><br>
+
+											<CENTER>
+												<div class="col-lg-6" style=" background-color: rgb(118, 110, 192); border-radius: 30px;
+			
+			padding: 5px;
+			">
+
+													<br>
+
+													<h3 style="color:#fff;" class="mb_25"> Daily Care of Central Lines <a type="button"
+															class="btn " id="sp-butt18"> <img src="arrow.png " style="height: 50%; width: 50%;"> </a>
+													</h3>
+
+
+
+
+
+
+												</div>
+											</CENTER>
+											<BR><BR>
+
+
+											<div id="sp-img18">
+
+
+												<br><BR>
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+						
+						padding: 5px;
+						">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25">Catheter Site Dressing Regimens</h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+												<h3>
+													1. Use either sterile gauze or sterile, transparent, semipermeable dressing to cover the
+													catheter site.
+													<br><BR>2. If the patient is diaphoretic or if the site is bleeding or oozing, use gauze
+													dressing until this is resolved.
+													<Br><BR>3. Replace catheter site dressing if the dressing becomes damp, loosened, or visibly
+													soiled.
+													<Br><BR>4. Do not use topical antibiotic ointment or creams on insertion sites, except for
+													dialysis catheters, because of their potential to promote fungal infections and<BR><BR>
+													antimicrobial resistance.
+													<Br><BR>5. Do not submerge the catheter or catheter site in water. Showering should be
+													permitted if precautions can be taken to reduce the likelihood of introducing organisms
+													into<BR><BR> the catheter (e.g., if the catheter and connecting device are protected with an
+													impermeable cover during the shower).
+													<Br><BR>6. Replace dressings used on short-term CVC sites every 2 days for gauze dressings.
+													<Br><BR>7. Replace dressings used on short-term CVC sites at least every 7 days for
+													transparent dressings, except in those pediatric patients in which the risk for dislodging
+													the<BR><BR> catheter may outweigh the benefit of changing the dressing.
+													<BR><BR>8. Replace transparent dressings used on tunneled or implanted CVC sites no more than
+													once per week (unless the dressing is soiled or loose), until the insertion site
+													has<BR><BR>healed.
+													<BR><BR>9. Monitor the catheter sites visually when changing the dressing or by palpation
+													through an intact dressing on a regular basis, depending on the clinical situation of
+													the<BR><BR> individual patient. If patients have tenderness at the insertion site, fever
+													without obvious source, or other manifestations suggesting local or bloodstream infection,
+													the<BR><BR> dressing should be removed to allow thorough examination of the site.
+													<BR><BR>10. Clean skin with a >0.5% chlorhexidine preparation with alcohol during dressing
+													changes. If there is a contraindication to chlorhexidine, tincture of iodine, an iodophor,
+													or<BR><BR> 70% alcohol can be used as alternatives.
+													<BR><BR>11. Promptly remove any intravascular catheter that is no longer essential.
+
+												</h3><br><BR>
+
+
+
+												<br><BR>
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+			
+			padding: 5px;
+			">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25">Replacement of CVCs, Including PICCs and Hemodialysis
+															Catheters</h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+												<BR>
+												<h3>
+													1. Do not routinely replace CVCs, PICCs, hemodialysis catheters, or pulmonary artery catheters
+													to prevent catheter-related infections.
+													<BR><BR>2. Do not remove CVCs or PICCs on the basis of fever alone. Use clinical judgment
+													regarding the appropriateness of removing the catheter if infection is evidenced<BR><BR>
+													elsewhere or if a noninfectious cause of fever is suspected.
+													<Br><BR>3. Do not use guidewire exchanges routinely for non-tunneled catheters to prevent
+													infection.
+													<BR><BR>4. Do not use guidewire exchanges to replace a non-tunneled catheter suspected of
+													infection.
+													<Br><BR>5. Use a guidewire exchange to replace a malfunctioning non-tunneled catheter if no
+													evidence of infection is present.
+													<Br><BR>6. Use new sterile gloves before handling the new catheter when guidewire exchanges
+													are performed.
+
+												</h3><BR><BR>
+
+
+												<br><BR>
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+			
+			padding: 5px;
+			">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25">Replacement of Administration Sets</h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+												<BR>
+												<h3>
+													1. In patients not receiving blood, blood products or fat emulsions, replace administration
+													sets that are continuously used, including secondary sets and add-on devices,<BR><BR> no more
+													frequently than at 96-hour intervals, but at least every 7 days.
+													<BR><BR>2. Replace tubing used to administer blood, blood products, or fat emulsions (those
+													combined with amino acids and glucose in a 3-in-1 admixture or infused separately)<BR><BR>
+													within 24 hours of initiating the infusion.
+													<BR><BR>3. Replace tubing used to administer propofol infusions every 6 or 12 hours, when the
+													vial is changed, per the manufacturer’s recommendation.
+												</h3><br><BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+											</div>
+
+
+
+
+											<Br><br>
+
+											<CENTER>
+												<div class="col-lg-6" style=" background-color: rgb(118, 110, 192); border-radius: 30px;
+											
+											padding: 5px;
+											">
+
+													<br>
+
+													<h3 style="color:#fff;" class="mb_25"> Removal of Central Lines <a type="button" class="btn "
+															id="sp-butt19"> <img src="arrow.png " style="height: 50%; width: 50%;"> </a></h3>
+
+
+
+
+
+
+												</div>
+											</CENTER>
+											<BR><BR>
+
+
+											<div id="sp-img19">
+
+												<br><BR>
+												<BR><BR>
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+														
+														padding: 5px;
+														">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25">CVC removal</h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+												<h3>
+													1. Minimize Patient’s activity for at least one hour.<BR><BR>
+													2. Check PT/INR within normal range.<BR><BR>
+													3. Remove wrist watch/Jewelry and rings.<BR><BR>
+													4. Confirm hand washing/ sanitization with seven steps of hand Hygiene.<BR><BR>
+													5. Wear Gloves.<BR><BR>
+													6. Remove Dressing.<BR><BR>
+													7. Clean site with 2% Chlorhexidine/ 70 % Isopropyl or another available antiseptic
+													solution.<BR><BR>
+													8. Remove Suture.<BR><BR>
+													9. Remove Catheter by applying slight pressure on puncture site.<Br><BR>
+													10. Manual pressure applied for at least 5 minutes above puncture site to occlude
+													blood.<BR><br>
+													11. Transparent dressing on puncture site.<BR><BR>
+													12. Post removal assessment.<BR><BR>
+													13. Remove gloves. Dispose all used equipment properly.<Br><BR>
+													14. Confirm hand Hygiene.<BR><BR>
+													15. Document procedure and fill provided checklist.<BR><BR>
+													<BR>
+												</h3>
+
+												<br>
+												<BR>
+
+												<div class="col-12" style="display: flex;
+    justify-content: center;   width: 100%;
+    height: 18rem;object-fit: cover;">
+
+													<img src="removal.jpg" class="handImg"
+														alt="Example of high touch surfaces in a specialised patient area.">
+													&nbsp;
+													<img src="removal1.jpg" class="handImg"
+														alt="Example of high touch surfaces in a specialised patient area.">
+
+												</div><Br><BR>
+
+											</div>
+
+
+
+
+
+
+
+										</div>
+									</div>
+
+
+
+
+
+
+
+
+									<div class="card">
+										<div class="card-header">
+											<h2 class="mb-0">
+												<a href="#" id="53" class="btn " type="button" data-bs-toggle="collapse"
+													data-bs-target="#collapseOne5" aria-expanded="false" aria-controls="collapseThree"
+													style="font-size: 25px;">
+													Care Bundle for Surgical Procedure
+												</a>
+											</h2>
+										</div>
+										<div id="collapseOne5" class="collapse " aria-labelledby="headingOne5" data-parent="#accordion_ex">
+											<div class="card-body">
+
+
+
+												<Br><br>
+
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(118, 110, 192); border-radius: 30px;
+														
+														padding: 5px;
+														">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25"> Surgical Hand Rub/ Surgical Hand Scrub <a
+																type="button" class="btn " id="sp-butt20"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a></h3>
+
+
+
+
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+												<div id="sp-img20">
+
+													<BR><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+																	
+																	padding: 5px;
+																	">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">Surgical Hand Rub/ Surgical Hand Scrub</h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+
+
+
+
+													<div class="container">
+														<div class="mySlides">
+															<center><img src="RUB.jpg" style="width:60%; height: 60%;"></center>
+
+														</div>
+
+														<div class="mySlides">
+															<center><img src="RUB1.jpg" style="width:60%; height: 60%;"></center>
+
+														</div>
+
+
+														<div class="mySlides">
+															<center><img src="RUB2.jpg" style="width:60%; height: 60%;"></center>
+
+														</div>
+
+
+
+
+														<a class="prev" onclick="plusSlides(-1)">❮</a>
+														<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+													</div>
+
+
+
+
+
+
+												</div>
+
+
+
+
+
+												<Br><br>
+
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(118, 110, 192); border-radius: 30px;
+																
+																padding: 5px;
+																">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25"> Ensuring Sterilization of a Sterile Pack <a
+																type="button" class="btn " id="sp-butt21"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a></h3>
+
+
+
+
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+
+												<div id="sp-img21">
+
+													<BR><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+																			
+																			padding: 5px;
+																			">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">Before Use of Sterile Instrument Set, make sure of
+																the following </h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+
+
+
+
+
+													<BR><BR>
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+														<h3>Outer condition of set is alright/Outer sheet is intact<BR><BR>
+
+															1. External sterilization indicator (slanting lines on autoclave
+															tape should be black)<Br><BR>
+
+															2. Packing / sterilization date<BR><BR>
+
+															3. Expiry date<Br><BR>
+
+															4. Batch no.<BR><BR>
+
+															5. Set Department Name
+														</h3>
+														<BR>
+														<center><a type="button" class="btn " id="sp-butt24"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a><bR><BR>
+															<div id="sp-img24"><BR>
+
+
+																<div class="col-12" style="display: flex;
+																				justify-content: center;   width: 100%;
+																				height: 40rem;object-fit: cover;">
+																	<img src="surgical22.jpeg" class="handImg" alt="">
+																</div>
+															</div>
+														</center>
+													</div>
+													<bR><BR>
+
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+														<h3>Check for double wrapping sheet(paper + cloth)
+														</h3>
+														<BR>
+														<center><a type="button" class="btn " id="sp-butt25"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a>
+															<div id="sp-img25">
+
+																<div class="col-12" style="display: flex;
+																				justify-content: center;   width: 100%;
+																				height: 30rem;object-fit: cover;">
+																	<img src="surgical1.jpg" class="handImg" alt="">
+																</div>
+															</div>
+														</center>
+													</div>
+
+
+													<bR><BR>
+
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+														<h3>(Cloth+ cloth)
+														</h3>
+														<BR>
+														<center><a type="button" class="btn " id="sp-butt26"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a>
+															<div id="sp-img26">
+
+																<div class="col-12" style="display: flex;
+																					justify-content: center;   width: 100%;
+																					height: 30rem;object-fit: cover;">
+																	<img src="surgical2.jpg" class="handImg" alt="">
+																</div>
+															</div>
+														</center>
+													</div>
+
+
+													<bR><BR>
+
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+														<h3>Surgical Site Infection (SSI) Care Bundle
+														</h3>
+														<BR>
+														<center><a type="button" class="btn " id="sp-butt27"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a>
+															<div id="sp-img27">
+
+																<div class="col-12" style="display: flex;
+																						justify-content: center;   width: 100%;
+																						height: 30rem;object-fit: cover;">
+																	<img src="surgical3.jpg" class="handImg" alt="">
+																</div>
+															</div>
+														</center>
+													</div>
+
+
+
+
+													<bR><BR>
+
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+														<h3>
+															Check for internal sterilization indicator as per manufacturer instructions.(Currently in
+															LGH, in case of internal indicator as per manufacturer instructions
+															,whole line<BR><BR> should be turned black on sterigage.Half turned black or
+															white/unchnaged color is not acceptable.
+														</h3>
+														<BR>
+														<center><a type="button" class="btn " id="sp-butt28"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a>
+															<div id="sp-img28">
+
+																<div class="col-12" style="display: flex;
+																							justify-content: center;   width: 100%;
+																							height: 30rem;object-fit: cover;">
+																	<img src="surgical4.jpg" class="handImg" alt="">
+																</div>
+															</div>
+														</center>
+													</div>
+
+
+
+
+													<bR><BR>
+
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+														<h3>
+															Check for indicator as per manufacturer’s instruction for low temperature sterilization
+															(Currently in LGH change of color on the paper packing for low temperature<br><br>
+															sterilization
+															should be from pale to yellow).
+														</h3>
+														<BR>
+														<center><a type="button" class="btn " id="sp-butt29"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a>
+															<div id="sp-img29">
+
+																<div class="col-12" style="display: flex;
+																								justify-content: center;   width: 100%;
+																								height: 30rem;object-fit: cover;">
+																	<img src="SURGICAL23.jpeg" class="handImg" alt="">
+																</div>
+															</div>
+														</center>
+													</div>
+
+
+
+
+													<bR><BR>
+
+													<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+														<h3>
+															The set is not fit for use if there is free water inside sets or stains of blood etc.
+															Even in the presence of valid external and internal sterilization indicators.
+															<BR><BR>
+															In case of any ambiguity of sterilization process, the set should be returned to CSSD.
+														</h3>
+														<BR>
+														<center><a type="button" class="btn " id="sp-butt30"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a>
+															<div id="sp-img30">
+
+																<div class="col-12" style="display: flex;
+																									justify-content: center;   width: 100%;
+																									height: 30rem;object-fit: cover;">
+																	<img src="surgical6.jpg" class="handImg" alt="">
+																</div>
+															</div>
+														</center>
+													</div>
+
+
+
+
+												</div>
+
+
+
+
+
+
+
+
+
+
+												<Br><br>
+
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(118, 110, 192); border-radius: 30px;
+																		
+																		padding: 5px;
+																		">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25"> Surgical Site Infection (SSI) Care Bundle <a
+																type="button" class="btn " id="sp-butt22"> <img src="arrow.png "
+																	style="height: 50%; width: 50%;"> </a></h3>
+
+
+
+
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+												<div id="sp-img22">
+
+
+													<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+					
+					padding: 20px;
+					">
+
+														<br>
+														<CENTER>
+															<h1 style="color:#fff;" class="mb_25">Surgical Site Infection (SSI) Care Bundle </h1>
+														</CENTER>
+
+													</div>
+													<Br><br>
+
+
+
+													<BR><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+																					
+																					padding: 5px;
+																					">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">Pre Operative</h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+													<h3>
+														1. Preoperative bathing (with ordinary/antibacterial soap) is recommended.<BR><BR>
+														2. Avoid hair removal; if hair removal is necessary, avoid the use of razors. Use clippers
+														instead.<Br><BR>
+														3. The preop antibiotic should be administered within an hour of incision.<BR><BR>
+														4. Patient normothermia and normal blood glucose level(for diabetics) should be maintained
+														throughout the surgery.<BR><BR>
+														5. Identify and treat preoperative infections (eg UTI) be
+													</h3><BR>
+													<BR><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+		
+		padding: 5px;
+		">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">Inter Operative</h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+													<h3>
+														1. Cleaning and decontamination should be made sure of.<BR><BR>
+														2. Control the traffic.<BR><BR>
+														3. Doors should be closed all the time during operation.<BR><BR>
+														4. Proper ventilation should be maintained throughout the surgery. Positive pressure should
+														be maintained (min of 15 air
+														exchanges per hour,3of which must be of <BR><BR> fresh air). Filtering of air should be
+														through two filters
+														that provide 90% efficacy. Air should be introduced near ceiling and exits near
+														floor.<BR><BR>
+														5. Properly perform surgical hand scrub/rub. Don appropriate PPE.<BR><BR>
+														6. Perform skin preparation of patient’s skin properly.<BR><BR>
+														7. Patient should be covered with a drape.<BR><BR>
+														8. Drape should separate surgical instruments, equipment and supplies.<BR><BR>
+														9. Surgical instruments should be properly sterilized.
+													</h3> <BR>
+													<div class="col-lg-5" style="background-color: rgb(198, 198, 240); ">
+														<h3>check for sterilization <a type="button" class="btn " id="sp-butt31"> <img
+																	src="arrow.png " style="height: 40%; width: 40%;"> </a>
+														</h3>
+													</div>
+
+													<div id="sp-img31">
+
+
+
+
+
+
+														<br><br>
+
+														<div class="single_quick_activity button4 " style=" background-color: brown; border-radius: 25px;
+					
+					padding: 20px;
+					">
+
+															<br>
+															<CENTER>
+																<h1 style="color:#fff;" class="mb_25">Before use of Sterile Instrument Set,make sure of
+																	the
+																	following</h1>
+															</CENTER>
+
+														</div>
+														<Br><br>
+
+
+
+
+
+
+
+
+
+														<BR><BR>
+														<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+															<h3>Outer condition of set is alright/Outer sheet is intact<BR><BR>
+
+																1. External sterilization indicator (slanting lines on autoclave
+																tape should be black)<Br><BR>
+
+																2. Packing / sterilization date<BR><BR>
+
+																3. Expiry date<Br><BR>
+
+																4. Batch no.<BR><BR>
+
+																5. Set Department Name
+															</h3>
+															<BR>
+															<center><a type="button" class="btn " id="sp-butt32"> <img src="arrow.png "
+																		style="height: 50%; width: 50%;"> </a><bR><BR>
+																<div id="sp-img32"><BR>
+
+
+																	<div class="col-12" style="display: flex;
+							justify-content: center;   width: 100%;
+							height: 40rem;object-fit: cover;">
+																		<img src="surgical22.jpeg" class="handImg" alt="">
+																	</div>
+																</div>
+															</center>
+														</div>
+														<bR><BR>
+
+														<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+															<h3>Check for double wrapping sheet(paper + cloth)
+															</h3>
+															<BR>
+															<center><a type="button" class="btn " id="sp-butt33"> <img src="arrow.png "
+																		style="height: 50%; width: 50%;"> </a>
+																<div id="sp-img33">
+
+																	<div class="col-12" style="display: flex;
+							justify-content: center;   width: 100%;
+							height: 30rem;object-fit: cover;">
+																		<img src="surgical1.jpg" class="handImg" alt="">
+																	</div>
+																</div>
+															</center>
+														</div>
+
+
+														<bR><BR>
+
+														<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+															<h3>(Cloth+ cloth)
+															</h3>
+															<BR>
+															<center><a type="button" class="btn " id="sp-butt34"> <img src="arrow.png "
+																		style="height: 50%; width: 50%;"> </a>
+																<div id="sp-img34">
+
+																	<div class="col-12" style="display: flex;
+								justify-content: center;   width: 100%;
+								height: 30rem;object-fit: cover;">
+																		<img src="surgical2.jpg" class="handImg" alt="">
+																	</div>
+																</div>
+															</center>
+														</div>
+
+
+														<bR><BR>
+
+														<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+															<h3>Surgical Site Infection (SSI) Care Bundle
+															</h3>
+															<BR>
+															<center><a type="button" class="btn " id="sp-butt35"> <img src="arrow.png "
+																		style="height: 50%; width: 50%;"> </a>
+																<div id="sp-img35">
+
+																	<div class="col-12" style="display: flex;
+									justify-content: center;   width: 100%;
+									height: 30rem;object-fit: cover;">
+																		<img src="surgical3.jpg" class="handImg" alt="">
+																	</div>
+																</div>
+															</center>
+														</div>
+
+
+
+
+														<bR><BR>
+
+														<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+															<h3>
+																Check for internal sterilization indicator as per manufacturer instructions.(Currently
+																in LGH, in case of internal indicator as per manufacturer instructions
+																,whole line<BR><BR> should be turned black on sterigage.Half turned black or
+																white/unchnaged color is not acceptable.
+															</h3>
+															<BR>
+															<center><a type="button" class="btn " id="sp-butt36"> <img src="arrow.png "
+																		style="height: 50%; width: 50%;"> </a>
+																<div id="sp-img36">
+
+																	<div class="col-12" style="display: flex;
+										justify-content: center;   width: 100%;
+										height: 30rem;object-fit: cover;">
+																		<img src="surgical4.jpg" class="handImg" alt="">
+																	</div>
+																</div>
+															</center>
+														</div>
+
+
+
+
+														<bR><BR>
+
+														<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+															<h3>
+																Check for indicator as per manufacturer’s instruction for low temperature sterilization
+																(Currently in LGH change of color on the paper packing for low temperature<br><br>
+																sterilization
+																should be from pale to yellow).
+															</h3>
+															<BR>
+															<center><a type="button" class="btn " id="sp-butt37"> <img src="arrow.png "
+																		style="height: 50%; width: 50%;"> </a>
+																<div id="sp-img37">
+
+																	<div class="col-12" style="display: flex;
+											justify-content: center;   width: 100%;
+											height: 30rem;object-fit: cover;">
+																		<img src="SURGICAL23.jpeg" class="handImg" alt="">
+																	</div>
+																</div>
+															</center>
+														</div>
+
+
+
+
+														<bR><BR>
+
+														<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+															<h3>
+																The set is not fit for use if there is free water inside sets or stains of blood etc.
+																Even in the presence of valid external and internal sterilization indicators.
+																<BR><BR>
+																In case of any ambiguity of sterilization process, the set should be returned to CSSD.
+															</h3>
+															<BR>
+															<center><a type="button" class="btn " id="sp-butt38"> <img src="arrow.png "
+																		style="height: 50%; width: 50%;"> </a>
+																<div id="sp-img38">
+
+																	<div class="col-12" style="display: flex;
+												justify-content: center;   width: 100%;
+												height: 30rem;object-fit: cover;">
+																		<img src="surgical6.jpg" class="handImg" alt="">
+																	</div>
+																</div>
+															</center>
+														</div>
+
+
+													</div>
+
+
+
+
+
+
+													<BR><BR>
+													<CENTER>
+														<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+					
+					padding: 5px;
+					">
+
+															<br>
+
+															<h3 style="color:#fff;" class="mb_25">Inter Operative</h3>
+
+
+														</div>
+													</CENTER>
+													<BR><BR>
+
+													<h3>
+														1. Surgical dressing should be done aseptically by non-touch technique.<BR><BR>
+														2. Protect primary closure incisions with sterile dressing for 24 for 48 hours.<br><BR>
+														3. Maintain immediate post-op normothermia.<BR><BR>
+														4. Control blood glucose levels (in diabetic pts) post operatively.<BR><BR>
+														5. Observe five moments of hand Hygiene.<BR><BR>
+														6. Educate patient about surgical site infection.<BR>
+													</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+												</div>
+
+											</div>
+
+
+
+
+
+
+											<Br><br>
+
+											<CENTER>
+												<div class="col-lg-6" style=" background-color: rgb(118, 110, 192); border-radius: 30px;
+																				
+																				padding: 5px;
+																				">
+
+													<br>
+
+													<h3 style="color:#fff;" class="mb_25"> Open Wound Dressing <a type="button" class="btn "
+															id="sp-butt23"> <img src="arrow.png " style="height: 50%; width: 50%;"> </a></h3>
+
+
+
+
+
+
+												</div>
+											</CENTER>
+											<BR><BR>
+
+
+											<div id="sp-img23">
+
+												<BR><BR>
+												<CENTER>
+													<div class="col-lg-6" style=" background-color: rgb(58, 45, 180); border-radius: 30px;
+																							
+																							padding: 5px;
+																							">
+
+														<br>
+
+														<h3 style="color:#fff;" class="mb_25">Open Wound Dressing </h3>
+
+
+													</div>
+												</CENTER>
+												<BR><BR>
+
+
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														1. Disinfect top shelf of dressing trolley with disinfectant
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt39"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img39">
+
+															<div class="col-12" style="display: flex;
+												justify-content: center;   width: 100%;
+												height: 30rem;object-fit: cover;">
+																<img src="wound.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														2.Collect all equipment along with non-infectious(white) and infectious waste
+														bags(yellow).(gown, sterile dressing pack, skin antiseptic, sterile <BR><BR>gloves,
+														examination gloves, hand sanitizer etc)
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt40"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img40">
+
+															<div class="col-12" style="display: flex;
+													justify-content: center;   width: 100%;
+													height: 30rem;object-fit: cover;">
+																<img src="wound1.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														3. Perform Hand Hygiene. (Before touching the patient)
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt41"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img41">
+
+															<div class="col-12" style="display: flex;
+														justify-content: center;   width: 100%;
+														height: 30rem;object-fit: cover;">
+																<img src="wound2.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														4. Don Apron(before exposure of wound)
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt42"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img42">
+
+															<div class="col-12" style="display: flex;
+															justify-content: center;   width: 100%;
+															height: 30rem;object-fit: cover;">
+																<img src="wound3.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														5.Expose the dressingarea.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt43"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img43">
+
+															<div class="col-12" style="display: flex;
+																justify-content: center;   width: 100%;
+																height: 30rem;object-fit: cover;">
+																<img src="wound4.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														6. Perform Hand Hygiene(Before aseptic procedure)
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt44"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img44">
+
+															<div class="col-12" style="display: flex;
+																	justify-content: center;   width: 100%;
+																	height: 30rem;object-fit: cover;">
+																<img src="wound5.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														7. Open the dressing pack and lay it flat to create an aseptic field on the top of trolley.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt45"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img45">
+
+															<div class="col-12" style="display: flex;
+																		justify-content: center;   width: 100%;
+																		height: 30rem;object-fit: cover;">
+																<img src="wound6.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														8. Open equipment using non-touch technique and place needed items on aseptic field.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt46"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img46">
+
+															<div class="col-12" style="display: flex;
+																			justify-content: center;   width: 100%;
+																			height: 30rem;object-fit: cover;">
+																<img src="wound7.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														9. Pour pertinent solution into liquid compartments of dressing tray.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt47"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img47">
+
+															<div class="col-12" style="display: flex;
+																				justify-content: center;   width: 100%;
+																				height: 30rem;object-fit: cover;">
+																<img src="wound8.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														10. Wear examination gloves and remove the soiled dressing.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt48"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img48">
+
+															<div class="col-12" style="display: flex;
+																					justify-content: center;   width: 100%;
+																					height: 30rem;object-fit: cover;">
+																<img src="wound9.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														11. Place soiled dressing along with examination gloves in clinical waste bag.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt49"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img49">
+
+															<div class="col-12" style="display: flex;
+																						justify-content: center;   width: 100%;
+																						height: 30rem;object-fit: cover;">
+																<img src="wound10.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														12. Perform Hand Hygiene (After body fluid exposure before dressing procedure)
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt50"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img50">
+
+															<div class="col-12" style="display: flex;
+																							justify-content: center;   width: 100%;
+																							height: 30rem;object-fit: cover;">
+																<img src="wound11.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														13. Place sterile drape adjacent to under wound. Don sterile gloves using non-touch
+														technique.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt51"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img51">
+
+															<div class="col-12" style="display: flex;
+																								justify-content: center;   width: 100%;
+																								height: 30rem;object-fit: cover;">
+																<img src="wound12.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														14. Clean wound if required
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt52"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img52">
+
+															<div class="col-12" style="display: flex;
+																									justify-content: center;   width: 100%;
+																									height: 30rem;object-fit: cover;">
+																<img src="wound13.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														15. Dispose of used swab in clinical waste bag.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt53"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img53">
+
+															<div class="col-12" style="display: flex;
+																										justify-content: center;   width: 100%;
+																										height: 30rem;object-fit: cover;">
+																<img src="wound14.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														16. Apply new sterile dressing.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt54"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img54">
+
+															<div class="col-12" style="display: flex;
+																											justify-content: center;   width: 100%;
+																											height: 30rem;object-fit: cover;">
+																<img src="wound15.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														17. Remove gloves at the bedside and dispose in clinical waste bag.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt55"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img55">
+
+															<div class="col-12" style="display: flex;
+																												justify-content: center;   width: 100%;
+																												height: 30rem;object-fit: cover;">
+																<img src="wound16.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														18. Perform Hand Hygiene immediately after removing gloves.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt56"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img56">
+
+															<div class="col-12" style="display: flex;
+																													justify-content: center;   width: 100%;
+																													height: 30rem;object-fit: cover;">
+																<img src="wound17.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														19. Dispose-of clinical waste properly in infectious waste bin(yellow)
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt57"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img57">
+
+															<div class="col-12" style="display: flex;
+																														justify-content: center;   width: 100%;
+																														height: 30rem;object-fit: cover;">
+																<img src="wound18.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														20. Remove apron dispose of in clinical waste bag
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt58"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img58">
+
+															<div class="col-12" style="display: flex;
+																															justify-content: center;   width: 100%;
+																															height: 30rem;object-fit: cover;">
+																<img src="wound19.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+
+
+
+
+												<div class="col-lg-12" style="background-color: rgba(247, 233, 233, 0.781);"><BR><BR>
+													<h3>
+														21.Perform Hand Hygiene.
+													</h3>
+													<BR>
+													<center><a type="button" class="btn " id="sp-butt59"> <img src="arrow.png "
+																style="height: 50%; width: 50%;"> </a>
+														<div id="sp-img59">
+
+															<div class="col-12" style="display: flex;
+																																justify-content: center;   width: 100%;
+																																height: 30rem;object-fit: cover;">
+																<img src="wound20.jpg" class="handImg" alt="">
+															</div>
+														</div>
+													</center>
+												</div>
+												<bR><BR>
+
+
+											</div>
+
+
+
+
+
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+
+
+
+
+							</div>
+
+
+
+
+
+
+
+
+
+
+
+						</div>
+					</div>
+					<CENTER>
+						<H5 style="color: BLUE; font-style: italic; font-weight: bold;">
+							Source: CDC(NHSN) ;Bloodstream Infection Event (Central Line-Associated Bloodstream Infection and
+							Non-central Line Associated Bloodstream Infection)(2022)
+						</H5>
+
+					</CENTER>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		</div>
+		</div>
+		</div><br><Br>
+		<BR>
+		<div class="footer_part">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer_iner text-center">
+							<p>2022 © <a href="http://www.pacslink.com.pk/" target="_blank" rel="noopener noreferrer"
+									style="color: blue;"><img style="height: 2rem;" src="PLC-Logo.png" alt=""></a>
+							<h5 class="m-0" style="color: white;"><a href="http://www.pacslink.com.pk/" target="_blank"
+									rel="noopener noreferrer" style="color: blue;">&nbsp; www.pacslink.com.pk</h5></a> - Developed by <a
+								href="#"> </a> <a href="https://www.facebook.com/GetOutOfMyBasementxD" target="_blank"
+								rel="noopener noreferrer"> Anas Mehmood</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="hospital-html/js/jquery1-3.4.1.min.js"></script>
+	<script src="hospital-html/js/popper1.min.js"></script>
+	<script src="hospital-html/js/bootstrap1.min.js"></script>
+	<script src="hospital-html/js/metisMenu.js"></script>
+	<script src="hospital-html/vendors/count_up/jquery.waypoints.min.js"></script>
+	<script src="hospital-html/vendors/chartlist/Chart.min.js"></script>
+	<script src="hospital-html/vendors/count_up/jquery.counterup.min.js"></script>
+	<script src="hospital-html/vendors/swiper_slider/js/swiper.min.js"></script>
+	<script src="hospital-html/vendors/niceselect/js/jquery.nice-select.min.js"></script>
+	<script src="hospital-html/vendors/owl_carousel/js/owl.carousel.min.js"></script>
+	<script src="hospital-html/vendors/gijgo/gijgo.min.js"></script>
+	<script src="hospital-html/vendors/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="hospital-html/vendors/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="hospital-html/vendors/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="hospital-html/vendors/datatable/js/buttons.flash.min.js"></script>
+	<script src="hospital-html/vendors/datatable/js/jszip.min.js"></script>
+	<script src="hospital-html/vendors/datatable/js/pdfmake.min.js"></script>
+	<script src="hospital-html/vendors/datatable/js/vfs_fonts.js"></script>
+	<script src="hospital-html/vendors/datatable/js/buttons_html5.min.js"></script>
+	<script src="hospital-html/vendors/datatable/js/buttons.print.min.js"></script>
+	<script src="hospital-html/js/chart.min.js"></script>
+	<script src="hospital-html/vendors/progressbar/jquery.barfiller.js"></script>
+	<script src="hospital-html/vendors/tagsinput/tagsinput.js"></script>
+	<script src="hospital-html/vendors/text_editor/summernote-bs4.js"></script>
+	<script src="hospital-html/vendors/apex_chart/apexcharts.js"></script>
+	<script src="hospital-html/js/custom.js"></script>
+	<script src="hospital-html/vendors/apex_chart/bar_active_1.js"></script>
+	<script src="hospital-html/vendors/apex_chart/apex_chart_list.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			//set animation timing
+			var animationDelay = 2500,
+				//loading bar effect
+				barAnimationDelay = 3800,
+				barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
+				//letters effect
+				lettersDelay = 50,
+				//type effect
+				typeLettersDelay = 150,
+				selectionDuration = 500,
+				typeAnimationDelay = selectionDuration + 800,
+				//clip effect 
+				revealDuration = 600,
+				revealAnimationDelay = 1500;
+
+			initHeadline();
+
+
+			function initHeadline() {
+				//insert <i> element for each letter of a changing word
+				singleLetters($('.cd-headline.letters').find('b'));
+				//initialise headline animation
+				animateHeadline($('.cd-headline'));
+			}
+
+			function singleLetters($words) {
+				$words.each(function () {
+					var word = $(this),
+						letters = word.text().split(''),
+						selected = word.hasClass('is-visible');
+					for (i in letters) {
+						if (word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
+						letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>' : '<i>' + letters[i] + '</i>';
+					}
+					var newLetters = letters.join('');
+					word.html(newLetters).css('opacity', 1);
+				});
+			}
+
+			function animateHeadline($headlines) {
+				var duration = animationDelay;
+				$headlines.each(function () {
+					var headline = $(this);
+
+					if (headline.hasClass('loading-bar')) {
+						duration = barAnimationDelay;
+						setTimeout(function () { headline.find('.cd-words-wrapper').addClass('is-loading') }, barWaiting);
+					} else if (headline.hasClass('clip')) {
+						var spanWrapper = headline.find('.cd-words-wrapper'),
+							newWidth = spanWrapper.width() + 10
+						spanWrapper.css('width', newWidth);
+					} else if (!headline.hasClass('type')) {
+						//assign to .cd-words-wrapper the width of its longest word
+						var words = headline.find('.cd-words-wrapper b'),
+							width = 0;
+						words.each(function () {
+							var wordWidth = $(this).width();
+							if (wordWidth > width) width = wordWidth;
+						});
+						headline.find('.cd-words-wrapper').css('width', width);
+					};
+
+					//trigger animation
+					setTimeout(function () { hideWord(headline.find('.is-visible').eq(0)) }, duration);
+				});
+			}
+
+			function hideWord($word) {
+				var nextWord = takeNext($word);
+
+				if ($word.parents('.cd-headline').hasClass('type')) {
+					var parentSpan = $word.parent('.cd-words-wrapper');
+					parentSpan.addClass('selected').removeClass('waiting');
+					setTimeout(function () {
+						parentSpan.removeClass('selected');
+						$word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
+					}, selectionDuration);
+					setTimeout(function () { showWord(nextWord, typeLettersDelay) }, typeAnimationDelay);
+
+				} else if ($word.parents('.cd-headline').hasClass('letters')) {
+					var bool = ($word.children('i').length >= nextWord.children('i').length) ? true : false;
+					hideLetter($word.find('i').eq(0), $word, bool, lettersDelay);
+					showLetter(nextWord.find('i').eq(0), nextWord, bool, lettersDelay);
+
+				} else if ($word.parents('.cd-headline').hasClass('clip')) {
+					$word.parents('.cd-words-wrapper').animate({ width: '2px' }, revealDuration, function () {
+						switchWord($word, nextWord);
+						showWord(nextWord);
+					});
+
+				} else if ($word.parents('.cd-headline').hasClass('loading-bar')) {
+					$word.parents('.cd-words-wrapper').removeClass('is-loading');
+					switchWord($word, nextWord);
+					setTimeout(function () { hideWord(nextWord) }, barAnimationDelay);
+					setTimeout(function () { $word.parents('.cd-words-wrapper').addClass('is-loading') }, barWaiting);
+
+				} else {
+					switchWord($word, nextWord);
+					setTimeout(function () { hideWord(nextWord) }, animationDelay);
+				}
+			}
+
+			function showWord($word, $duration) {
+				if ($word.parents('.cd-headline').hasClass('type')) {
+					showLetter($word.find('i').eq(0), $word, false, $duration);
+					$word.addClass('is-visible').removeClass('is-hidden');
+
+				} else if ($word.parents('.cd-headline').hasClass('clip')) {
+					$word.parents('.cd-words-wrapper').animate({ 'width': $word.width() + 10 }, revealDuration, function () {
+						setTimeout(function () { hideWord($word) }, revealAnimationDelay);
+					});
+				}
+			}
+
+			function hideLetter($letter, $word, $bool, $duration) {
+				$letter.removeClass('in').addClass('out');
+
+				if (!$letter.is(':last-child')) {
+					setTimeout(function () { hideLetter($letter.next(), $word, $bool, $duration); }, $duration);
+				} else if ($bool) {
+					setTimeout(function () { hideWord(takeNext($word)) }, animationDelay);
+				}
+
+				if ($letter.is(':last-child') && $('html').hasClass('no-csstransitions')) {
+					var nextWord = takeNext($word);
+					switchWord($word, nextWord);
+				}
+			}
+
+			function showLetter($letter, $word, $bool, $duration) {
+				$letter.addClass('in').removeClass('out');
+
+				if (!$letter.is(':last-child')) {
+					setTimeout(function () { showLetter($letter.next(), $word, $bool, $duration); }, $duration);
+				} else {
+					if ($word.parents('.cd-headline').hasClass('type')) { setTimeout(function () { $word.parents('.cd-words-wrapper').addClass('waiting'); }, 200); }
+					if (!$bool) { setTimeout(function () { hideWord($word) }, animationDelay) }
+				}
+			}
+
+			function takeNext($word) {
+				return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+			}
+
+			function takePrev($word) {
+				return (!$word.is(':first-child')) ? $word.prev() : $word.parent().children().last();
+			}
+
+			function switchWord($oldWord, $newWord) {
+				$oldWord.removeClass('is-visible').addClass('is-hidden');
+				$newWord.removeClass('is-hidden').addClass('is-visible');
+			}
+		});
+	</script>
+	<script src="/modal.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#aboutus-menu").hide();
+			$("#aboutus").click(function () {
+				$("#aboutus-menu").toggle('slow');
+			});
+		});
+	</script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+		crossorigin="anonymous"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
